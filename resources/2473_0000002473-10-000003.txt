@@ -1,0 +1,223 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ Omb9sLCOStg9dAfBryEwEMRFMfNTudc8geix3cmnajZbqmDBovrGU4hOPd0PwraT
+ eD3yAG6d7QVnrab3O/1DDA==
+
+<SEC-DOCUMENT>0000002473-10-000003.txt : 20101021
+<SEC-HEADER>0000002473-10-000003.hdr.sgml : 20101021
+<ACCEPTANCE-DATETIME>20101021103324
+ACCESSION NUMBER:		0000002473-10-000003
+CONFORMED SUBMISSION TYPE:	D
+PUBLIC DOCUMENT COUNT:		1
+ITEM INFORMATION:		Rule 506
+FILED AS OF DATE:		20101021
+DATE AS OF CHANGE:		20101021
+EFFECTIVENESS DATE:		20101021
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ADVANCED DIGITAL SYSTEMS INC
+		CENTRAL INDEX KEY:			0000002473
+		IRS NUMBER:				000000000
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-149394
+		FILM NUMBER:		101134341
+
+	BUSINESS ADDRESS:	
+		STREET 1:		4601 CREEKSTONE DRIVE
+		STREET 2:		SUITE 130
+		CITY:			DURHAM
+		STATE:			NC
+		ZIP:			27703
+		BUSINESS PHONE:		919-485-4819
+
+	MAIL ADDRESS:	
+		STREET 1:		4601 CREEKSTONE DRIVE
+		STREET 2:		SUITE 130
+		CITY:			DURHAM
+		STATE:			NC
+		ZIP:			27703
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>D
+<SEQUENCE>1
+<FILENAME>primary_doc.xml
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<edgarSubmission>
+
+    <schemaVersion>X0704</schemaVersion>
+
+    <submissionType>D</submissionType>
+
+    <testOrLive>LIVE</testOrLive>
+
+    <primaryIssuer>
+        <cik>0000002473</cik>
+        <entityName>ADVANCED DIGITAL SYSTEMS INC</entityName>
+        <issuerAddress>
+            <street1>4601 CREEKSTONE DRIVE</street1>
+            <street2>SUITE 130</street2>
+            <city>DURHAM</city>
+            <stateOrCountry>NC</stateOrCountry>
+            <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+            <zipCode>27703</zipCode>
+        </issuerAddress>
+        <issuerPhoneNumber>919-485-4819</issuerPhoneNumber>
+        <jurisdictionOfInc>DELAWARE</jurisdictionOfInc>
+        <issuerPreviousNameList>
+            <value>None</value>
+        </issuerPreviousNameList>
+        <edgarPreviousNameList>
+            <value>None</value>
+        </edgarPreviousNameList>
+        <entityType>Corporation</entityType>
+        <yearOfInc>
+            <overFiveYears>true</overFiveYears>
+        </yearOfInc>
+    </primaryIssuer>
+
+    <relatedPersonsList>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>JAMES</firstName>
+                <lastName>CLARY</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>4601 CREEKSTONE DRIVE</street1>
+                <street2>SUITE 130</street2>
+                <city>DURHAM</city>
+                <stateOrCountry>NC</stateOrCountry>
+                <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+                <zipCode>27703</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>GREGORY</firstName>
+                <middleName>J.</middleName>
+                <lastName>CLARY</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>4601 CREEKSTONE DRIVE</street1>
+                <street2>SUITE 130</street2>
+                <city>DURHAM</city>
+                <stateOrCountry>NC</stateOrCountry>
+                <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+                <zipCode>27703</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>KINSEY</firstName>
+                <lastName>ROPER, III</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>4601 CREEKSTONE DRIVE</street1>
+                <street2>SUITE 130</street2>
+                <city>DURHAM</city>
+                <stateOrCountry>NC</stateOrCountry>
+                <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+                <zipCode>27703</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+    </relatedPersonsList>
+
+    <offeringData>
+        <industryGroup>
+            <industryGroupType>Other Technology</industryGroupType>
+        </industryGroup>
+        <issuerSize>
+            <revenueRange>Decline to Disclose</revenueRange>
+        </issuerSize>
+        <federalExemptionsExclusions>
+            <item>06</item>
+        </federalExemptionsExclusions>
+        <typeOfFiling>
+            <newOrAmendment>
+                <isAmendment>false</isAmendment>
+            </newOrAmendment>
+            <dateOfFirstSale>
+                <value>2010-08-18</value>
+            </dateOfFirstSale>
+        </typeOfFiling>
+        <durationOfOffering>
+            <moreThanOneYear>false</moreThanOneYear>
+        </durationOfOffering>
+        <typesOfSecuritiesOffered>
+            <isDebtType>true</isDebtType>
+        </typesOfSecuritiesOffered>
+        <businessCombinationTransaction>
+            <isBusinessCombinationTransaction>false</isBusinessCombinationTransaction>
+            <clarificationOfResponse></clarificationOfResponse>
+        </businessCombinationTransaction>
+        <minimumInvestmentAccepted>0</minimumInvestmentAccepted>
+        <salesCompensationList></salesCompensationList>
+        <offeringSalesAmounts>
+            <totalOfferingAmount>200000</totalOfferingAmount>
+            <totalAmountSold>85000</totalAmountSold>
+            <totalRemaining>115000</totalRemaining>
+            <clarificationOfResponse></clarificationOfResponse>
+        </offeringSalesAmounts>
+        <investors>
+            <hasNonAccreditedInvestors>false</hasNonAccreditedInvestors>
+            <totalNumberAlreadyInvested>2</totalNumberAlreadyInvested>
+        </investors>
+        <salesCommissionsFindersFees>
+            <salesCommissions>
+                <dollarAmount>0</dollarAmount>
+            </salesCommissions>
+            <findersFees>
+                <dollarAmount>0</dollarAmount>
+            </findersFees>
+            <clarificationOfResponse></clarificationOfResponse>
+        </salesCommissionsFindersFees>
+        <useOfProceeds>
+            <grossProceedsUsed>
+                <dollarAmount>33700</dollarAmount>
+                <isEstimate>true</isEstimate>
+            </grossProceedsUsed>
+            <clarificationOfResponse></clarificationOfResponse>
+        </useOfProceeds>
+        <signatureBlock>
+            <authorizedRepresentative>false</authorizedRepresentative>
+            <signature>
+                <issuerName>ADVANCED DIGITAL SYSTEMS INC</issuerName>
+                <signatureName>GREGORY J. CLARY</signatureName>
+                <nameOfSigner>GREGORY J. CLARY</nameOfSigner>
+                <signatureTitle>PRESIDENT</signatureTitle>
+                <signatureDate>2010-10-21</signatureDate>
+            </signature>
+        </signatureBlock>
+    </offeringData>
+</edgarSubmission>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----
