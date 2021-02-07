@@ -1,0 +1,211 @@
+<SEC-DOCUMENT>0000002473-11-000003.txt : 20110812
+<SEC-HEADER>0000002473-11-000003.hdr.sgml : 20110812
+<ACCEPTANCE-DATETIME>20110812094335
+ACCESSION NUMBER:		0000002473-11-000003
+CONFORMED SUBMISSION TYPE:	D
+PUBLIC DOCUMENT COUNT:		1
+ITEM INFORMATION:		Rule 506
+FILED AS OF DATE:		20110812
+DATE AS OF CHANGE:		20110812
+EFFECTIVENESS DATE:		20110812
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ADVANCED DIGITAL SYSTEMS INC
+		CENTRAL INDEX KEY:			0000002473
+		IRS NUMBER:				000000000
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-164348
+		FILM NUMBER:		111029420
+
+	BUSINESS ADDRESS:	
+		STREET 1:		4601 CREEKSTONE DRIVE
+		STREET 2:		SUITE 102
+		CITY:			DURHAM
+		STATE:			NC
+		ZIP:			27703
+		BUSINESS PHONE:		919-485-4819
+
+	MAIL ADDRESS:	
+		STREET 1:		4601 CREEKSTONE DRIVE
+		STREET 2:		SUITE 102
+		CITY:			DURHAM
+		STATE:			NC
+		ZIP:			27703
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>D
+<SEQUENCE>1
+<FILENAME>primary_doc.xml
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<edgarSubmission>
+
+    <schemaVersion>X0704</schemaVersion>
+
+    <submissionType>D</submissionType>
+
+    <testOrLive>LIVE</testOrLive>
+
+    <primaryIssuer>
+        <cik>0000002473</cik>
+        <entityName>ADVANCED DIGITAL SYSTEMS INC</entityName>
+        <issuerAddress>
+            <street1>4601 CREEKSTONE DRIVE</street1>
+            <street2>SUITE 102</street2>
+            <city>DURHAM</city>
+            <stateOrCountry>NC</stateOrCountry>
+            <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+            <zipCode>27703</zipCode>
+        </issuerAddress>
+        <issuerPhoneNumber>919-485-4819</issuerPhoneNumber>
+        <jurisdictionOfInc>DELAWARE</jurisdictionOfInc>
+        <issuerPreviousNameList>
+            <value>None</value>
+        </issuerPreviousNameList>
+        <edgarPreviousNameList>
+            <value>None</value>
+        </edgarPreviousNameList>
+        <entityType>Corporation</entityType>
+        <yearOfInc>
+            <overFiveYears>true</overFiveYears>
+        </yearOfInc>
+    </primaryIssuer>
+
+    <relatedPersonsList>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>James</firstName>
+                <lastName>Clary</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>4601 Creekstone Drive</street1>
+                <street2>Suite 102</street2>
+                <city>Durham</city>
+                <stateOrCountry>NC</stateOrCountry>
+                <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+                <zipCode>27703</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Gregory</firstName>
+                <lastName>Clary</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>4601 Creekstone Drive</street1>
+                <street2>Suite 102</street2>
+                <city>Durham</city>
+                <stateOrCountry>NC</stateOrCountry>
+                <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+                <zipCode>27703</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Kinsey</firstName>
+                <lastName>Roper, III</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>4601 Creekstone Drive</street1>
+                <street2>Suite 102</street2>
+                <city>Durham</city>
+                <stateOrCountry>NC</stateOrCountry>
+                <stateOrCountryDescription>NORTH CAROLINA</stateOrCountryDescription>
+                <zipCode>27703</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+    </relatedPersonsList>
+
+    <offeringData>
+        <industryGroup>
+            <industryGroupType>Other Technology</industryGroupType>
+        </industryGroup>
+        <issuerSize>
+            <revenueRange>Decline to Disclose</revenueRange>
+        </issuerSize>
+        <federalExemptionsExclusions>
+            <item>06</item>
+        </federalExemptionsExclusions>
+        <typeOfFiling>
+            <newOrAmendment>
+                <isAmendment>false</isAmendment>
+            </newOrAmendment>
+            <dateOfFirstSale>
+                <value>2011-08-03</value>
+            </dateOfFirstSale>
+        </typeOfFiling>
+        <durationOfOffering>
+            <moreThanOneYear>false</moreThanOneYear>
+        </durationOfOffering>
+        <typesOfSecuritiesOffered>
+            <isEquityType>true</isEquityType>
+            <isDebtType>true</isDebtType>
+        </typesOfSecuritiesOffered>
+        <businessCombinationTransaction>
+            <isBusinessCombinationTransaction>false</isBusinessCombinationTransaction>
+            <clarificationOfResponse></clarificationOfResponse>
+        </businessCombinationTransaction>
+        <minimumInvestmentAccepted>25000</minimumInvestmentAccepted>
+        <salesCompensationList></salesCompensationList>
+        <offeringSalesAmounts>
+            <totalOfferingAmount>125000</totalOfferingAmount>
+            <totalAmountSold>125000</totalAmountSold>
+            <totalRemaining>0</totalRemaining>
+            <clarificationOfResponse></clarificationOfResponse>
+        </offeringSalesAmounts>
+        <investors>
+            <hasNonAccreditedInvestors>false</hasNonAccreditedInvestors>
+            <totalNumberAlreadyInvested>2</totalNumberAlreadyInvested>
+        </investors>
+        <salesCommissionsFindersFees>
+            <salesCommissions>
+                <dollarAmount>0</dollarAmount>
+            </salesCommissions>
+            <findersFees>
+                <dollarAmount>0</dollarAmount>
+            </findersFees>
+            <clarificationOfResponse></clarificationOfResponse>
+        </salesCommissionsFindersFees>
+        <useOfProceeds>
+            <grossProceedsUsed>
+                <dollarAmount>0</dollarAmount>
+            </grossProceedsUsed>
+            <clarificationOfResponse></clarificationOfResponse>
+        </useOfProceeds>
+        <signatureBlock>
+            <authorizedRepresentative>false</authorizedRepresentative>
+            <signature>
+                <issuerName>ADVANCED DIGITAL SYSTEMS INC</issuerName>
+                <signatureName>Gregory Clary</signatureName>
+                <nameOfSigner>Gregory Clary</nameOfSigner>
+                <signatureTitle>CEO</signatureTitle>
+                <signatureDate>2011-08-12</signatureDate>
+            </signature>
+        </signatureBlock>
+    </offeringData>
+</edgarSubmission>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

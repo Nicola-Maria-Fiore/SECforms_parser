@@ -1,0 +1,306 @@
+<SEC-DOCUMENT>0000911959-13-000012.txt : 20130409
+<SEC-HEADER>0000911959-13-000012.hdr.sgml : 20130409
+<ACCEPTANCE-DATETIME>20130409125959
+ACCESSION NUMBER:		0000911959-13-000012
+CONFORMED SUBMISSION TYPE:	D
+PUBLIC DOCUMENT COUNT:		1
+ITEM INFORMATION:		Rule 506
+FILED AS OF DATE:		20130409
+DATE AS OF CHANGE:		20130409
+EFFECTIVENESS DATE:		20130409
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			INDUSTRIAL SERVICES OF AMERICA INC /FL
+		CENTRAL INDEX KEY:			0000004187
+		STANDARD INDUSTRIAL CLASSIFICATION:	SANITARY SERVICES [4950]
+		IRS NUMBER:				590172746
+		STATE OF INCORPORATION:			FL
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-194679
+		FILM NUMBER:		13750563
+
+	BUSINESS ADDRESS:	
+		STREET 1:		7100 GRADE LN BUILDING 1
+		CITY:			LOUISVILLE
+		STATE:			KY
+		ZIP:			40232
+		BUSINESS PHONE:		5023681661
+
+	MAIL ADDRESS:	
+		STREET 1:		7100 GRADE LANE BUILDING 1
+		CITY:			LOUISVILLE
+		STATE:			KY
+		ZIP:			40232
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	ALSON INDUSTRIES INC
+		DATE OF NAME CHANGE:	19840807
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	ALSON MANUFACTURING CO INC
+		DATE OF NAME CHANGE:	19700920
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>D
+<SEQUENCE>1
+<FILENAME>primary_doc.xml
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<edgarSubmission>
+
+    <schemaVersion>X0706</schemaVersion>
+
+    <submissionType>D</submissionType>
+
+    <testOrLive>LIVE</testOrLive>
+
+    <primaryIssuer>
+        <cik>0000004187</cik>
+        <entityName>INDUSTRIAL SERVICES OF AMERICA INC /FL</entityName>
+        <issuerAddress>
+            <street1>7100 GRADE LN BUILDING 1</street1>
+            <city>LOUISVILLE</city>
+            <stateOrCountry>KY</stateOrCountry>
+            <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+            <zipCode>40232</zipCode>
+        </issuerAddress>
+        <issuerPhoneNumber>5023681661</issuerPhoneNumber>
+        <jurisdictionOfInc>FLORIDA</jurisdictionOfInc>
+        <edgarPreviousNameList>
+            <previousName>ALSON INDUSTRIES INC</previousName>
+            <previousName>ALSON MANUFACTURING CO INC</previousName>
+        </edgarPreviousNameList>
+        <entityType>Corporation</entityType>
+        <yearOfInc>
+            <overFiveYears>true</overFiveYears>
+        </yearOfInc>
+    </primaryIssuer>
+
+    <relatedPersonsList>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Harry</firstName>
+                <lastName>Kletter</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Alan</firstName>
+                <lastName>Schroering</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Albert</firstName>
+                <lastName>Cozzi</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>David</firstName>
+                <lastName>Russell</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Francesca</firstName>
+                <lastName>Scarito</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Brian</firstName>
+                <lastName>Donaghy</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Orson</firstName>
+                <lastName>Oliver</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Alan</firstName>
+                <lastName>Gildenberg</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>7100 Grade Lane</street1>
+                <street2>Building 1</street2>
+                <city>Louisville</city>
+                <stateOrCountry>KY</stateOrCountry>
+                <stateOrCountryDescription>KENTUCKY</stateOrCountryDescription>
+                <zipCode>40232</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification></relationshipClarification>
+        </relatedPersonInfo>
+    </relatedPersonsList>
+
+    <offeringData>
+        <industryGroup>
+            <industryGroupType>Other</industryGroupType>
+        </industryGroup>
+        <issuerSize>
+            <revenueRange>Over $100,000,000</revenueRange>
+        </issuerSize>
+        <federalExemptionsExclusions>
+            <item>06</item>
+        </federalExemptionsExclusions>
+        <typeOfFiling>
+            <newOrAmendment>
+                <isAmendment>false</isAmendment>
+            </newOrAmendment>
+            <dateOfFirstSale>
+                <value>2013-04-01</value>
+            </dateOfFirstSale>
+        </typeOfFiling>
+        <durationOfOffering>
+            <moreThanOneYear>true</moreThanOneYear>
+        </durationOfOffering>
+        <typesOfSecuritiesOffered>
+            <isEquityType>true</isEquityType>
+            <isOptionToAcquireType>true</isOptionToAcquireType>
+        </typesOfSecuritiesOffered>
+        <businessCombinationTransaction>
+            <isBusinessCombinationTransaction>false</isBusinessCombinationTransaction>
+            <clarificationOfResponse></clarificationOfResponse>
+        </businessCombinationTransaction>
+        <minimumInvestmentAccepted>500000</minimumInvestmentAccepted>
+        <salesCompensationList></salesCompensationList>
+        <offeringSalesAmounts>
+            <totalOfferingAmount>8900000</totalOfferingAmount>
+            <totalAmountSold>500000</totalAmountSold>
+            <totalRemaining>8400000</totalRemaining>
+            <clarificationOfResponse>Details of the Offering may be found in the Issuer's Current Report on Form 8-K dated April 1, 2013.</clarificationOfResponse>
+        </offeringSalesAmounts>
+        <investors>
+            <hasNonAccreditedInvestors>false</hasNonAccreditedInvestors>
+            <totalNumberAlreadyInvested>1</totalNumberAlreadyInvested>
+        </investors>
+        <salesCommissionsFindersFees>
+            <salesCommissions>
+                <dollarAmount>0</dollarAmount>
+            </salesCommissions>
+            <findersFees>
+                <dollarAmount>0</dollarAmount>
+            </findersFees>
+            <clarificationOfResponse></clarificationOfResponse>
+        </salesCommissionsFindersFees>
+        <useOfProceeds>
+            <grossProceedsUsed>
+                <dollarAmount>0</dollarAmount>
+            </grossProceedsUsed>
+            <clarificationOfResponse></clarificationOfResponse>
+        </useOfProceeds>
+        <signatureBlock>
+            <authorizedRepresentative>false</authorizedRepresentative>
+            <signature>
+                <issuerName>INDUSTRIAL SERVICES OF AMERICA INC /FL</issuerName>
+                <signatureName>Alan Schroering</signatureName>
+                <nameOfSigner>Alan Schroering</nameOfSigner>
+                <signatureTitle>Interim CFO and VP of Finance</signatureTitle>
+                <signatureDate>2013-04-09</signatureDate>
+            </signature>
+        </signatureBlock>
+    </offeringData>
+</edgarSubmission>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

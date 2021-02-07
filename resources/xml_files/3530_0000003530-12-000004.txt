@@ -1,0 +1,530 @@
+<SEC-DOCUMENT>0000003530-12-000004.txt : 20120731
+<SEC-HEADER>0000003530-12-000004.hdr.sgml : 20120731
+<ACCEPTANCE-DATETIME>20120731113613
+ACCESSION NUMBER:		0000003530-12-000004
+CONFORMED SUBMISSION TYPE:	D
+PUBLIC DOCUMENT COUNT:		1
+ITEM INFORMATION:		Rule 506
+FILED AS OF DATE:		20120731
+DATE AS OF CHANGE:		20120731
+EFFECTIVENESS DATE:		20120731
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ALGONQUIN GAS TRANSMISSION, LLC
+		CENTRAL INDEX KEY:			0000003530
+		IRS NUMBER:				042127237
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-181999
+		FILM NUMBER:		12995861
+
+	BUSINESS ADDRESS:	
+		STREET 1:		5400 WESTHEIMER COURT
+		CITY:			HOUSTON
+		STATE:			TX
+		ZIP:			77056
+		BUSINESS PHONE:		(713) 627-5400
+
+	MAIL ADDRESS:	
+		STREET 1:		5400 WESTHEIMER COURT
+		CITY:			HOUSTON
+		STATE:			TX
+		ZIP:			77056
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	ALGONQUIN GAS TRANSMISSION LLC
+		DATE OF NAME CHANGE:	20120720
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	ALGONQUIN GAS TRANSMISSION CO
+		DATE OF NAME CHANGE:	20000101
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>D
+<SEQUENCE>1
+<FILENAME>primary_doc.xml
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<edgarSubmission>
+
+    <schemaVersion>X0706</schemaVersion>
+
+    <submissionType>D</submissionType>
+
+    <testOrLive>LIVE</testOrLive>
+
+    <primaryIssuer>
+        <cik>0000003530</cik>
+        <entityName>ALGONQUIN GAS TRANSMISSION, LLC</entityName>
+        <issuerAddress>
+            <street1>5400 WESTHEIMER COURT</street1>
+            <city>HOUSTON</city>
+            <stateOrCountry>TX</stateOrCountry>
+            <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+            <zipCode>77056</zipCode>
+        </issuerAddress>
+        <issuerPhoneNumber>(713) 627-5400</issuerPhoneNumber>
+        <jurisdictionOfInc>DELAWARE</jurisdictionOfInc>
+        <edgarPreviousNameList>
+            <previousName>ALGONQUIN GAS TRANSMISSION LLC</previousName>
+            <previousName>ALGONQUIN GAS TRANSMISSION CO</previousName>
+        </edgarPreviousNameList>
+        <entityType>Limited Liability Company</entityType>
+        <yearOfInc>
+            <overFiveYears>true</overFiveYears>
+        </yearOfInc>
+    </primaryIssuer>
+
+    <relatedPersonsList>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>John</firstName>
+                <middleName>V.</middleName>
+                <lastName>Adams</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Supply Chain</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Gregory</firstName>
+                <middleName>P.</middleName>
+                <lastName>Bilinski</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Transmission Services</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Guy</firstName>
+                <middleName>G.</middleName>
+                <lastName>Buckley</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President and Treasurer</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Frederick</firstName>
+                <middleName>S.</middleName>
+                <lastName>Bush</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President and Controller</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Allen</firstName>
+                <middleName>C.</middleName>
+                <lastName>Capps</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Andrew</firstName>
+                <middleName>J.</middleName>
+                <lastName>Drake</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Asset Integrity</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Tina</firstName>
+                <middleName>V.</middleName>
+                <lastName>Faraca</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Engineering and Construction</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Patrick</firstName>
+                <middleName>J.</middleName>
+                <lastName>Hester</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President and Assistant Secretary</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Richard</firstName>
+                <middleName>J.</middleName>
+                <lastName>Kruse, Jr.</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Regulatory and FERC Compliance Officer</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Fulkra</firstName>
+                <middleName>J.</middleName>
+                <lastName>Mason</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Environmental, Health and Safety</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Gregg</firstName>
+                <middleName>E.</middleName>
+                <lastName>McBride</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Rates and Certificates</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Brian</firstName>
+                <middleName>R.</middleName>
+                <lastName>McKerlie</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Business Development, Northeast Transmission</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Richard</firstName>
+                <lastName>Paglia</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Marketing</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>J.</firstName>
+                <middleName>Patrick</middleName>
+                <lastName>Reddy</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Manager</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Patricia</firstName>
+                <middleName>M.</middleName>
+                <lastName>Rice</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President and Secretary</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Gregory</firstName>
+                <middleName>J.</middleName>
+                <lastName>Rizzo</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Manager and Group Vice President, Regulatory Affairs</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>William</firstName>
+                <middleName>L.</middleName>
+                <lastName>Whaley, Jr.</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Gas Control</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>Thomas</firstName>
+                <middleName>V.</middleName>
+                <lastName>Wooden</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Vice President, Field Operations</relationshipClarification>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>William</firstName>
+                <middleName>T.</middleName>
+                <lastName>Yardley</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>5400 Westheimer Court</street1>
+                <city>Houston,</city>
+                <stateOrCountry>TX</stateOrCountry>
+                <stateOrCountryDescription>TEXAS</stateOrCountryDescription>
+                <zipCode>77056</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+            <relationshipClarification>Manager and President</relationshipClarification>
+        </relatedPersonInfo>
+    </relatedPersonsList>
+
+    <offeringData>
+        <industryGroup>
+            <industryGroupType>Other Energy</industryGroupType>
+        </industryGroup>
+        <issuerSize>
+            <revenueRange>Decline to Disclose</revenueRange>
+        </issuerSize>
+        <federalExemptionsExclusions>
+            <item>06</item>
+        </federalExemptionsExclusions>
+        <typeOfFiling>
+            <newOrAmendment>
+                <isAmendment>false</isAmendment>
+            </newOrAmendment>
+            <dateOfFirstSale>
+                <value>2012-07-17</value>
+            </dateOfFirstSale>
+        </typeOfFiling>
+        <durationOfOffering>
+            <moreThanOneYear>false</moreThanOneYear>
+        </durationOfOffering>
+        <typesOfSecuritiesOffered>
+            <isDebtType>true</isDebtType>
+        </typesOfSecuritiesOffered>
+        <businessCombinationTransaction>
+            <isBusinessCombinationTransaction>false</isBusinessCombinationTransaction>
+            <clarificationOfResponse></clarificationOfResponse>
+        </businessCombinationTransaction>
+        <minimumInvestmentAccepted>1000000</minimumInvestmentAccepted>
+        <salesCompensationList>
+            <recipient>
+                <recipientName>Barclays Capital Inc.</recipientName>
+                <recipientCRDNumber>19714</recipientCRDNumber>
+                <associatedBDName>None</associatedBDName>
+                <associatedBDCRDNumber>None</associatedBDCRDNumber>
+                <recipientAddress>
+                    <street1>745 Seventh Avenue</street1>
+                    <city>New York</city>
+                    <stateOrCountry>NY</stateOrCountry>
+                    <stateOrCountryDescription>NEW YORK</stateOrCountryDescription>
+                    <zipCode>10019</zipCode>
+                </recipientAddress>
+                <statesOfSolicitationList>
+                    <state>NY</state>
+                    <description>NEW YORK</description>
+                    <state>NJ</state>
+                    <description>NEW JERSEY</description>
+                    <state>WI</state>
+                    <description>WISCONSIN</description>
+                    <state>IL</state>
+                    <description>ILLINOIS</description>
+                    <state>CO</state>
+                    <description>COLORADO</description>
+                    <state>IN</state>
+                    <description>INDIANA</description>
+                </statesOfSolicitationList>
+                <foreignSolicitation>false</foreignSolicitation>
+            </recipient>
+        </salesCompensationList>
+        <offeringSalesAmounts>
+            <totalOfferingAmount>350000000</totalOfferingAmount>
+            <totalAmountSold>350000000</totalAmountSold>
+            <totalRemaining>0</totalRemaining>
+            <clarificationOfResponse></clarificationOfResponse>
+        </offeringSalesAmounts>
+        <investors>
+            <hasNonAccreditedInvestors>false</hasNonAccreditedInvestors>
+            <totalNumberAlreadyInvested>14</totalNumberAlreadyInvested>
+        </investors>
+        <salesCommissionsFindersFees>
+            <salesCommissions>
+                <dollarAmount>875000</dollarAmount>
+            </salesCommissions>
+            <findersFees>
+                <dollarAmount>0</dollarAmount>
+            </findersFees>
+            <clarificationOfResponse></clarificationOfResponse>
+        </salesCommissionsFindersFees>
+        <useOfProceeds>
+            <grossProceedsUsed>
+                <dollarAmount>0</dollarAmount>
+            </grossProceedsUsed>
+            <clarificationOfResponse></clarificationOfResponse>
+        </useOfProceeds>
+        <signatureBlock>
+            <authorizedRepresentative>false</authorizedRepresentative>
+            <signature>
+                <issuerName>ALGONQUIN GAS TRANSMISSION, LLC</issuerName>
+                <signatureName>/s/Patricia M. Rice</signatureName>
+                <nameOfSigner>Patricia M. Rice</nameOfSigner>
+                <signatureTitle>VP and Secretary</signatureTitle>
+                <signatureDate>2012-07-30</signatureDate>
+            </signature>
+        </signatureBlock>
+    </offeringData>
+</edgarSubmission>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
