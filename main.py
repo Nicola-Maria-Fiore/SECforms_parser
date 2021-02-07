@@ -1,6 +1,7 @@
 import pandas as pd
 import xmltodict
 import os
+import sys
 
 files = "resources/xml_files/"
 varlist = "resources/varlist.csv"
@@ -107,7 +108,8 @@ def parseListSeparateFile(value, df, file_id, baseName):
             for el in v: #more than one child
                 parseDict(el, file_id, df,num, prop_name)
                 num += 1
-
+        else:
+            parseDict(v, file_id, df,num, prop_name)
 
 def parseDict(xml_dict, fname, df,idx, baseName=""):
     if len(baseName)>0:
@@ -145,8 +147,42 @@ def getCSVName(_dir, fname):
     return new_fname
 
 
+def createDoFiles():
+    doContent = ""
+    count = 1
+    df_do = dataframes["main"]
+    for col in df_do.columns:
+        if col!="ID":
+            doContent += '\n label variable {} "v{}"'.format(col,count)
+            count += 1
+    with open(label_do,'w') as f:
+        f.write(doContent)
+
+    doContent = ''
+    for key, _ in dataframes.items():
+        doContent += '\nimport delimited "{}.csv", varnames(1) stringcols(_all) \n save "{}.dta" \n clear all'.format(key,key)
+    with open(import_do,'w') as f:
+        f.write(doContent)
+
+    new_var = pd.pandas.DataFrame(columns=["old_var","new_var"])
+    count = 1
+    for col in dataframes["main"].columns:
+        if col=="ID":
+            continue
+        row = len(new_var.index)
+        new_var.loc[row,"old_var"] = col
+        new_var.loc[row,"new_var"] = "v"+str(count)
+        count += 1
+
+    new_var.index.name='N'
+    new_var.to_csv(var_names_file)
+
 
 if __name__ == "__main__":
+    if len(sys.argv)<2:
+        print("Error: incorrect arguments, read the instructions")
+        sys.exit()
+
     df = pd.read_csv(varlist)
     df["level"] = df["level"].apply(pd.to_numeric)
 
@@ -159,49 +195,31 @@ if __name__ == "__main__":
         if row["avoid"] == 1:
             avoid_list.append(row["element_name"])
 
-    idx = 0
-    for file_name in os.listdir(files):
-        print("{} - {}".format(str(idx),file_name))
-        file_dir = files + file_name
+    if sys.argv[1]=="-a": 
+        idx = 0
+        for file_name in os.listdir(files):
+            print("{} - {}".format(str(idx),file_name))
+            file_dir = files + file_name
 
-        with open(file_dir, 'r') as file:
-            xml = file.read()
+            with open(file_dir, 'r') as file:
+                xml = file.read()
 
-        xml = cleanXML(xml)
-        xmldict = xmltodict.parse(xml)
-        parseDict(xmldict, file_name[:-4], dataframes["main"],idx)
-        idx += 1
+            xml = cleanXML(xml)
+            xmldict = xmltodict.parse(xml)
+            parseDict(xmldict, file_name[:-4], dataframes["main"],idx)
+            idx += 1
 
+        for key, value in dataframes.items():
+            count = 1
+            for col in value.columns:
+                if col=="ID":
+                    continue
+                value = value.rename({col: "v"+str(count)}, axis=1)
+                count += 1
+            value.index.name='N'
+            value.to_csv(getCSVName("results/",key))
 
-    doContent = ""
-    count = 1
-    df_do = dataframes["main"]
-    for col in df_do.columns:
-        if col!="ID":
-            doContent += '\n label variable {} "v{}"'.format(col,count)
-            count += 1
-    with open(label_do,'w') as f:
-        f.write(doContent)
-
-
-    doContent = ''
-    for key, _ in dataframes.items():
-        doContent += '\nimport delimited "{}.csv", varnames(1) stringcols(_all) \n save "{}.dta" \n clear all'.format(key,key)
-    with open(import_do,'w') as f:
-        f.write(doContent)
-
-
-    new_var = pd.pandas.DataFrame(columns=["old_var","new_var"])
-    for key, value in dataframes.items():
-        count = 1
-        for col in value.columns:
-            if col=="ID":
-                continue
-            value = value.rename({col: "v"+str(count)}, axis=1)
-            count += 1
-        value.index.name='N'
-        value.to_csv(getCSVName("results/",key))
-
-    new_var.to_csv(var_names_file)
+    if sys.argv[1]=="-b":
+        createDoFiles()
 
     print("Done")
