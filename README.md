@@ -1,3 +1,6 @@
+Install requirements
+pip install -r requirements.txt
+
 Create databases
 py main.py -a
 
