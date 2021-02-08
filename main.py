@@ -15,6 +15,7 @@ avoid_list = []
 to_add_list = []
 
 dataframes = {}
+dataframes_dict = {}
 federal_info = None
 
 
@@ -83,14 +84,16 @@ def parseListSameFile(value, df, idx, baseName): #Limit: array have only simple 
             continue
         if  isinstance(info, str): #only one child
             prop_name = baseName + separator + key + separator + str(num)
-            df.loc[idx,prop_name] = info
+            #df.loc[idx,prop_name] = info
+            df[idx].update({prop_name:info})
         else:
             for v in info:
                 if v==None:
                     continue
                 else:
                     prop_name = baseName + separator + key + separator + str(num)
-                    df.loc[idx,prop_name] = str(v)
+                    #df.loc[idx,prop_name] = str(v)
+                    df[idx].update({prop_name:str(v)})
                     num += 1
 
     
@@ -98,7 +101,7 @@ def parseListSeparateFile(value, df, file_id, baseName):
     if value==None or value=="None": #no child
         return
 
-    num = len(df.index)
+    num = len(df)
     separator = "_"
     for key, v in value.items():
         prop_name = str(baseName) + str(separator) + str(key)
@@ -117,23 +120,27 @@ def parseDict(xml_dict, fname, df,idx, baseName=""):
     else:
         separator = ""
 
-    try:
-        df.loc[idx,"ID"] = fname
-        for key, value in xml_dict.items():
-            prop_name = str(baseName) + str(separator) + str(key)
+    #df.loc[idx,"ID"] = fname
+    if idx>=len(df):
+        df.append({"ID":fname})
 
-            if value==None or value=="None" or key in avoid_list :
-                continue
+    for key, value in xml_dict.items():
+        prop_name = str(baseName) + str(separator) + str(key)
+
+        if value==None or value=="None" or key in avoid_list :
+            continue
+        else:
+            if key in dataframes:
+                parseListSeparateFile(value, dataframes_dict[key], fname, prop_name)
+            elif key in to_add_list:
+                parseListSameFile(value, df, idx, prop_name)
+            elif isinstance(value, str) or (not isinstance(value, dict) and value.isnumeric()):
+                #df.loc[idx,prop_name] = value
+                df[idx].update({prop_name:value})
             else:
-                if key in dataframes:
-                    parseListSeparateFile(value, dataframes[key], fname, prop_name)
-                elif key in to_add_list:
-                    parseListSameFile(value, df, idx, prop_name)
-                elif isinstance(value, str) or (not isinstance(value, dict) and value.isnumeric()):
-                    df.loc[idx,prop_name] = value
-                else:
-                    parseDict(value,fname,df,idx,prop_name)
-        
+                parseDict(value,fname,df,idx,prop_name)
+    try:
+            pass
     except Exception as e:
         print("E1 -> "+str(e))  
 
@@ -164,7 +171,7 @@ def createDoFiles():
     with open(import_do,'w') as f:
         f.write(doContent)
 
-    new_var = pd.pandas.DataFrame(columns=["old_var","new_var"])
+    new_var = pd.DataFrame(columns=["old_var","new_var"])
     count = 1
     for col in dataframes["main"].columns:
         if col=="ID":
@@ -189,9 +196,11 @@ if __name__ == "__main__":
     main_df = createDatasets(df)
 
     dataframes["main"] = main_df
+    dataframes_dict["main"] = []
     for index, row in df.iterrows():
         if row["separate_file"] == 1:
             dataframes[row["element_name"]] = main_df.copy(True)
+            dataframes_dict[row["element_name"]] = []
         if row["avoid"] == 1:
             avoid_list.append(row["element_name"])
 
@@ -206,9 +215,14 @@ if __name__ == "__main__":
 
             xml = cleanXML(xml)
             xmldict = xmltodict.parse(xml)
-            parseDict(xmldict, file_name[:-4], dataframes["main"],idx)
+            #parseDict(xmldict, file_name[:-4], dataframes["main"],idx)
+            parseDict(xmldict, file_name[:-4], dataframes_dict["main"],idx)
             idx += 1
 
+        for key in dataframes:
+            dataframes[key] = pd.DataFrame(dataframes_dict[key], columns=dataframes[key].columns)
+
+        
         for key, value in dataframes.items():
             count = 1
             for col in value.columns:
