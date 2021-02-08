@@ -2,6 +2,7 @@ import pandas as pd
 import xmltodict
 import os
 import sys
+import csv
 
 files = "resources/xml_files/"
 varlist = "resources/varlist.csv"
@@ -231,7 +232,9 @@ if __name__ == "__main__":
                 value = value.rename({col: "v"+str(count)}, axis=1)
                 count += 1
             value.index.name='N'
-            value.to_csv(getCSVName("results/",key))
+            for col in value.columns:
+                value[col] = value[col].astype(str)
+            value.to_csv(getCSVName("results/",key),index=False, quotechar='"', quoting=csv.QUOTE_NONNUMERIC)
 
     if sys.argv[1]=="-b":
         createDoFiles()
