@@ -168,7 +168,7 @@ def createDoFiles():
 
     doContent = ''
     for key, _ in dataframes.items():
-        doContent += 'import delimited "{}.csv", varnames(1) stringcols(_all) \n save "{}.dta" \n clear all \n'.format(key,key)
+        doContent += 'import delimited "{}.csv", varnames(1) stringcols(_all) bindquotes(strict) \n save "{}.dta" \n clear all \n'.format(key,key)
     with open(import_do,'w') as f:
         f.write(doContent)
 
