@@ -161,7 +161,7 @@ def createDoFiles():
     df_do = dataframes["main"]
     for col in df_do.columns:
         if col!="ID":
-            doContent += 'label variable {} "v{}" \n'.format(col,count)
+            doContent += 'label variable v{} "{}" \n'.format(count,col)
             count += 1
     with open(label_do,'w') as f:
         f.write(doContent)
