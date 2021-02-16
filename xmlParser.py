@@ -66,7 +66,7 @@ def parseDict(xml_dict, fname, df,idx ,to_add_list, avoid_list, dataframes, data
         separator = ""
 
     if idx>=len(df):
-        df.append({"ID":fname})
+        df.append({"id":"edgar/data/"+fname.replace("_","/")+".txt"})
 
     try:
         for key, value in xml_dict.items():
@@ -105,10 +105,10 @@ def Parse(to_add_list, avoid_list, dataframes, dataframes_dict):
         dataframes[key] = pd.DataFrame(dataframes_dict[key], columns=dataframes[key].columns)
     
     for key, value in dataframes.items():
-        print('Saveing {}...'.format(key))
+        print('Saving {}...'.format(key))
         count = 1
         for col in value.columns:
-            if col=="ID":
+            if col=="id":
                 continue
             value = value.rename({col: "v"+str(count)}, axis=1)
             count += 1

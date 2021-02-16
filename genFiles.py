@@ -10,7 +10,7 @@ def genLabelDo(dataframes):
     count = 1
     df_do = dataframes["main"]
     for col in df_do.columns:
-        if col!="ID":
+        if col!="id":
             doContent += 'label variable v{} "{}" \n'.format(count,col)
             count += 1
     with open(label_do,'w') as f:
@@ -29,7 +29,7 @@ def genVarNamesFile(dataframes):
     new_var = pd.DataFrame(columns=["old_var","new_var"])
     count = 1
     for col in dataframes["main"].columns:
-        if col=="ID":
+        if col=="id":
             continue
         row = len(new_var.index)
         new_var.loc[row,"old_var"] = col

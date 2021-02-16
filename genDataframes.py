@@ -54,6 +54,7 @@ def createDatasets(all_vars_list, df):
     dataframes_dict = {}
     avoid_list = []
 
+    all_vars_list = ["id"] + all_vars_list
     main_df = pd.DataFrame(columns=all_vars_list)
 
     dataframes["main"] = main_df
