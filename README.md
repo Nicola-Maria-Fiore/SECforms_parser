@@ -1,9 +1,7 @@
 Install requirements
 pip install -r requirements.txt
 
-"insert"
-
-
+compile file "resources/varlist.csv"
 
 Commands:
 Create databases
