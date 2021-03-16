@@ -9,6 +9,8 @@ https://www.sec.gov/page/corpfin-section-landing
 *TECHNICAL MATERIALS
 https://www.sec.gov/forms
 https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) -> edgform.pdf
+https://www.xbrl.org/the-standard/why/xbrl-for-securities-filing/
+https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://github.com/Arelle/EdgarRenderer
 
 *PRELIMINARY
