@@ -1,11 +1,15 @@
-Install requirements
+*INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
+*STUDY MATERIALS
+https://www.sec.gov/forms
+https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) -> edgform.pdf
+
+*PRELIMINARY
 compile file "resources/varlist.csv"
 
-Commands:
-Create databases
+*CREATE DATABASES
 py main.py -a
 
-Create do files and var names
+*CREATE DO FILES AND VARIABLE NAMES
 py main.py -b
