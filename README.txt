@@ -44,6 +44,9 @@ TO DO
 compile resources/filings.csv
 py main.py -download
 
+*DOWNLOAD FILINGS FROM LIST, FINAL REPORT
+py main.py -download report
+
 *FROM XML FILINGS CREATE SQL DATABASE
 compile resources/xml_filings.csv
 py main.py -xml
@@ -57,4 +60,7 @@ compile resources/html_filings.csv
 py main.py -html
 
 *SEE RESULTS
-see "results/"
+see "results/download"
+see "results/xml"
+see "results/xbrl"
+see "results/html"
