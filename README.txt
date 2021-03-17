@@ -21,7 +21,7 @@ https://github.com/Arelle/EdgarRenderer
 https://github.com/search?o=desc&q=edgar&s=stars&type=Repositories
 
 *GITHUB REPOSITORIES - XBRL
-https://github.com/search?o=desc&q=edgar&s=stars&type=Repositories
+https://github.com/search?o=desc&q=xbrl&s=stars&type=Repositories
 
 *PRELIMINARY
 compile file "resources/varlist.csv"
