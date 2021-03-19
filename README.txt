@@ -16,9 +16,6 @@ https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 https://github.com/Arelle/EdgarRenderer
 
-*GITHUB REPOSITORIES - EDGAR
-https://github.com/search?o=desc&q=edgar&s=stars&type=Repositories
-
 
 
 
