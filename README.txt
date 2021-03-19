@@ -3,7 +3,6 @@ pip install -r requirements.txt
 
 *STUDY MATERIALS
 https://www.sec.gov/oiea/Article/edgarguide.html
-https://www.investor.gov/introduction-investing/investing-basics/role-sec/laws-govern-securities-industry
 https://www.sec.gov/page/corpfin-section-landing
 
 *TECHNICAL MATERIALS - FORMS
@@ -41,10 +40,10 @@ py main.py -b
 
 TO DO
 *DOWNLOAD FILINGS FROM LIST
-compile resources/filings.csv
+compile resources/filings.csv (ex varlist)
 py main.py -download
 
-*DOWNLOAD FILINGS FROM LIST, FINAL REPORT
+*DOWNLOAD FILINGS FROM LIST - FINAL REPORT
 py main.py -download report
 
 *FROM XML FILINGS CREATE SQL DATABASE
