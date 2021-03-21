@@ -21,7 +21,7 @@ https://github.com/Arelle/EdgarRenderer
 
 ------OLD------
 *PRELIMINARY
-compile file "resources/varlist.csv"
+fill "resources/varlist.csv"
 
 *CREATE DATABASES
 py main.py -a
@@ -37,26 +37,32 @@ py main.py -b
 
 TO DO
 *DOWNLOAD FILINGS FROM LIST
-compile resources/filings.csv (ex varlist)
+fill "resources/filings.csv", column header "fname"
 py main.py -download
+#to "results/filings/"
 
 *DOWNLOAD FILINGS FROM LIST - FINAL REPORT
 py main.py -download report
+#to "results/filings/report.csv"
 
 *FROM XML FILINGS CREATE SQL DATABASE
-compile resources/xml_filings.csv
+fill "resources/filings.csv", column header "xml" dummy
 py main.py -xml
+#to "results/xml/"
+
 
 *FROM XBRL FILINGS CREATE SQL DATABASE (https://github.com/search?o=desc&q=xbrl&s=stars&type=Repositories)
-compile resources/xbrl_filings.csv
+fill "resources/filings.csv", column header "xbrl" dummy
 py main.py -xbrl
+#to "results/xbrl/"
 
 *CONVERT HTML FILINGS INTO TXT (https://stackoverflow.com/questions/14694482/converting-html-to-text-with-python; https://pypi.org/project/html2text/; https://skeptric.com/html-to-text/)
-compile resources/html_filings.csv
+fill "resources/filings.csv", column header "html" dummy
 py main.py -html
+#to "results/html/"
 
 *SEE RESULTS
-see "results/download"
-see "results/xml"
-see "results/xbrl"
-see "results/html"
+see "results/filings/"
+see "results/xml/"
+see "results/xbrl/"
+see "results/html/"
