@@ -19,7 +19,7 @@ https://github.com/Arelle/EdgarRenderer
 
 
 
-------OLD------
+------------------OLD------------------
 *PRELIMINARY
 fill "resources/varlist.csv"
 
@@ -28,8 +28,7 @@ py main.py -a
 
 *CREATE DO FILES AND VARIABLE NAMES
 py main.py -b
-------OLD------
-
+------------------OLD------------------
 
 
 
@@ -65,7 +64,5 @@ py main.py -html
 #to "results/html_query.txt"
 
 *SEE RESULTS
-see "results/filings/"
-see "results/xml/"
-see "results/xbrl/"
-see "results/html/"
+see "results/"
+
