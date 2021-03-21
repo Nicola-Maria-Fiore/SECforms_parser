@@ -47,17 +47,20 @@ py main.py -download report
 
 *FROM XML FILINGS CREATE SQL DATABASE
 fill "resources/filings.csv", column header "xml" dummy
+fill "resources/xml_schema.csv"
 py main.py -xml
 #to "results/xml/"
 
 
 *FROM XBRL FILINGS CREATE SQL DATABASE (https://github.com/search?o=desc&q=xbrl&s=stars&type=Repositories)
 fill "resources/filings.csv", column header "xbrl" dummy
+fill "resources/xbrl_schema.csv"
 py main.py -xbrl
 #to "results/xbrl/"
 
 *CONVERT HTML FILINGS INTO TXT (https://stackoverflow.com/questions/14694482/converting-html-to-text-with-python; https://pypi.org/project/html2text/; https://skeptric.com/html-to-text/)
 fill "resources/filings.csv", column header "html" dummy
+fill "resources/html_schema.csv"
 py main.py -html
 #to "results/html/"
 
