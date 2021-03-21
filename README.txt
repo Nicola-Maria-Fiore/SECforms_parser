@@ -6,6 +6,7 @@ https://www.sec.gov/oiea/Article/edgarguide.html
 https://www.sec.gov/page/corpfin-section-landing
 
 *TECHNICAL MATERIALS - FORMS
+https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) - (https://www.sec.gov/forms)
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
