@@ -4,6 +4,7 @@ pip install -r requirements.txt
 *STUDY MATERIALS
 https://www.sec.gov/oiea/Article/edgarguide.html
 https://www.sec.gov/page/corpfin-section-landing
+https://www.fasb.org/home
 
 *TECHNICAL MATERIALS - FORMS
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
