@@ -11,6 +11,7 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) - (https://www.sec.gov/forms)
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
+https://github.com/janlukasschroeder/sec-api
 https://sec-api.io/
 
 *TECHNICAL MATERIALS - XBRL
