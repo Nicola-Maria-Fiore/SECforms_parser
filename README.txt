@@ -2,6 +2,7 @@
 pip install -r requirements.txt
 
 *STUDY MATERIALS - GENERAL
+https://www.sec.gov/dera/data/edgar-log-file-data-set.html
 https://www.sec.gov/oiea/Article/edgarguide.html
 https://www.sec.gov/page/corpfin-section-landing
 https://www.fasb.org/home
