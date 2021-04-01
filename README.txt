@@ -10,15 +10,17 @@ https://www.sec.gov/dera/data
 https://www.fasb.org/home
 
 *STUDY MATERIALS - FILINGS and FORMS
-https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
+https://www.sec.gov/info/edgar/forms/edgform.pdf
 https://www.sec.gov/forms
 
 *TECHNICAL MATERIALS - FILINGS
+https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 https://github.com/sec-edgar/sec-edgar
 https://www.sec.gov/Archives/edgar/daily-index/
 https://www.sec.gov/Archives/edgar/full-index/
-https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm -> 
-"XSLT Stylesheets for HTML Rendering of EDGAR XML Filings", "ticker.txt", "company_tickers.json", "Current list of all CIKs matched with entity name"
+https://www.sec.gov/include/ticker.txt
+https://www.sec.gov/files/company_tickers.json
+https://www.sec.gov/Archives/edgar/cik-lookup-data.txt
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
@@ -53,33 +55,33 @@ py main.py -b
 
 
 TO DO
-*DOWNLOAD FILINGS FROM LIST
-fill "resources/filings.csv", column header "fname"
+*DOWNLOAD FILINGS FROM LIST - FINAL REPORT (not-downloaded?)
+fill "resources/filings.csv"
 py main.py -download
-#to "results/filings/"
+#to "results/filings/txt"
+#to "results/filings/txt"
+#to "results/filings/html"
 
-*DOWNLOAD FILINGS FROM LIST - FILINGS REPORT
-py main.py -download report
-#to "results/filings/filings_report.csv"
+
 
 *FROM XML FILINGS CREATE SQL DATABASE
-fill "resources/filings.csv", column header "xml" dummy
+fill "resources/xml.csv"
 fill "resources/xml_schema.csv"
 py main.py -xml
-#to "results/xml_query.txt"
+#to "results/sql_statement.txt"
 
 
 *FROM XBRL FILINGS CREATE SQL DATABASE (https://github.com/search?o=desc&q=xbrl&s=stars&type=Repositories)
-fill "resources/filings.csv", column header "xbrl" dummy
+fill "resources/xbrl.csv"
 fill "resources/xbrl_schema.csv"
 py main.py -xbrl
-#to "results/xbrl_query.txt"
+#to "results/filings/xbrl/"
 
 *CONVERT HTML FILINGS INTO TXT (https://stackoverflow.com/questions/14694482/converting-html-to-text-with-python; https://pypi.org/project/html2text/; https://skeptric.com/html-to-text/)
-fill "resources/filings.csv", column header "html" dummy
+fill "resources/html.csv"
 fill "resources/html_schema.csv"
 py main.py -html
-#to "results/html_query.txt"
+#to "results/filings/html/"
 
 *SEE RESULTS
 see "results/"
