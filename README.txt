@@ -16,6 +16,7 @@ https://www.sec.gov/forms
 *TECHNICAL MATERIALS - FILINGS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 https://github.com/sec-edgar/sec-edgar
+https://github.com/alions7000/SEC-EDGAR-text
 https://www.sec.gov/Archives/edgar/daily-index/
 https://www.sec.gov/Archives/edgar/full-index/
 https://www.sec.gov/include/ticker.txt
@@ -77,7 +78,7 @@ fill "resources/xbrl_schema.csv"
 py main.py -xbrl
 #to "results/filings/xbrl/"
 
-*CONVERT HTML FILINGS INTO TXT (https://stackoverflow.com/questions/14694482/converting-html-to-text-with-python; https://pypi.org/project/html2text/; https://skeptric.com/html-to-text/)
+*CONVERT HTML FILINGS INTO TXT (https://github.com/alions7000/SEC-EDGAR-text)
 fill "resources/html.csv"
 fill "resources/html_schema.csv"
 py main.py -html
