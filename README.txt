@@ -1,23 +1,26 @@
 *INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
-*STUDY MATERIALS - GENERAL
-https://www.sec.gov/oiea/Article/edgarguide.html
+*STUDY MATERIALS - SEC and FASB
+https://www.sec.gov/sec-data-resources
+https://www.sec.gov/edgar.shtml
 https://www.sec.gov/page/corpfin-section-landing
 https://www.sec.gov/dera
+https://www.sec.gov/dera/data
 https://www.fasb.org/home
 
+*STUDY MATERIALS - FILINGS and FORMS
+https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
+https://www.sec.gov/forms
 
 *TECHNICAL MATERIALS - FILINGS
-https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
-https://www.sec.gov/dera/data/edgar-log-file-data-set.html
 https://github.com/sec-edgar/sec-edgar
-
-*TECHNICAL MATERIALS - FORMS
-https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) - (https://www.sec.gov/forms)
+https://www.sec.gov/Archives/edgar/daily-index/
+https://www.sec.gov/Archives/edgar/full-index/
+https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm -> 
+"XSLT Stylesheets for HTML Rendering of EDGAR XML Filings", "ticker.txt", "company_tickers.json", "Current list of all CIKs matched with entity name"
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
-https://www.sec.gov/dera/data/dera_edgarfilingcounts
 
 *TECHNICAL MATERIALS - XBRL
 https://www.xbrl.org/the-standard/why/xbrl-for-securities-filing/
@@ -27,6 +30,9 @@ http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 https://github.com/Arelle/EdgarRenderer
 https://github.com/TiesdeKok/xbrl-api-playground
 https://github.com/tooksoi/ScraXBRL
+
+
+
 
 
 
