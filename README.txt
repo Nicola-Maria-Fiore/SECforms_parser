@@ -2,19 +2,22 @@
 pip install -r requirements.txt
 
 *STUDY MATERIALS - GENERAL
-https://www.sec.gov/dera/data/edgar-log-file-data-set.html
 https://www.sec.gov/oiea/Article/edgarguide.html
 https://www.sec.gov/page/corpfin-section-landing
+https://www.sec.gov/dera
 https://www.fasb.org/home
+
 
 *TECHNICAL MATERIALS - FILINGS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
+https://www.sec.gov/dera/data/edgar-log-file-data-set.html
 https://github.com/sec-edgar/sec-edgar
 
 *TECHNICAL MATERIALS - FORMS
 https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) - (https://www.sec.gov/forms)
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
+https://www.sec.gov/dera/data/dera_edgarfilingcounts
 
 *TECHNICAL MATERIALS - XBRL
 https://www.xbrl.org/the-standard/why/xbrl-for-securities-filing/
