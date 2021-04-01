@@ -7,9 +7,11 @@ https://www.sec.gov/oiea/Article/edgarguide.html
 https://www.sec.gov/page/corpfin-section-landing
 https://www.fasb.org/home
 
-*TECHNICAL MATERIALS - FORMS
+*TECHNICAL MATERIALS - FILINGS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
-https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
+https://github.com/sec-edgar/sec-edgar
+
+*TECHNICAL MATERIALS - FORMS
 https://www.sec.gov/edgar.shtml -> SEC Forms List (PDF versions) - (https://www.sec.gov/forms)
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
@@ -18,8 +20,8 @@ https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 https://www.xbrl.org/the-standard/why/xbrl-for-securities-filing/
 https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
-https://github.com/Arelle/EdgarRenderer
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
+https://github.com/Arelle/EdgarRenderer
 https://github.com/TiesdeKok/xbrl-api-playground
 https://github.com/tooksoi/ScraXBRL
 
