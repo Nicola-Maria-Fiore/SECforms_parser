@@ -25,6 +25,7 @@ https://www.sec.gov/files/company_tickers.json
 https://www.sec.gov/Archives/edgar/cik-lookup-data.txt
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
+https://www.sec.gov/data.json
 
 *TECHNICAL MATERIALS - XBRL
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
