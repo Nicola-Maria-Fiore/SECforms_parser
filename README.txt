@@ -1,13 +1,13 @@
 *INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
-*STUDY MATERIALS - SEC and FASB
+*STUDY MATERIALS - SEC
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/edgar.shtml
 https://www.sec.gov/page/corpfin-section-landing
 https://www.sec.gov/dera
-https://www.sec.gov/dera/data
-https://www.fasb.org/home
+https://www.sec.gov/search/search.htm
+https://www.sec.gov/data.json
 
 *STUDY MATERIALS - FILINGS and FORMS
 https://www.sec.gov/info/edgar/forms/edgform.pdf
@@ -15,6 +15,8 @@ https://www.sec.gov/forms
 
 *STUDY MATERIALS - XBRL
 https://www.sec.gov/structureddata/osd-inline-xbrl.html
+https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html
+http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 
 *TECHNICAL MATERIALS - FILINGS and FORMS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
@@ -25,23 +27,16 @@ https://www.sec.gov/files/company_tickers.json
 https://www.sec.gov/Archives/edgar/cik-lookup-data.txt
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
-https://www.sec.gov/data.json
-
-*TECHNICAL MATERIALS - XBRL
-https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
-http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 
 *GITHUB REPOS
-https://github.com/datasets/edgar
-https://github.com/sec-edgar/sec-edgar
-https://github.com/alions7000/SEC-EDGAR-text
-https://github.com/edgarminers/python-edgar
-https://github.com/harelba/q
-https://arelle.org/arelle/
-https://github.com/andrewkittredge/financial_fundamentals
-https://github.com/lukerosiak/pysec
-https://github.com/TiesdeKok/xbrl-api-playground
-https://github.com/tooksoi/ScraXBRL
+https://github.com/datasets/edgar (download)
+https://github.com/edgarminers/python-edgar (download)
+https://github.com/sec-edgar/sec-edgar (download)
+https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
+https://github.com/lukerosiak/pysec (xml)
+https://github.com/tooksoi/ScraXBRL (xml)
+https://github.com/andrewkittredge/financial_fundamentals (xbrl)
+
 
 
 
