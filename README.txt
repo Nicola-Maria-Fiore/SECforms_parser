@@ -15,6 +15,7 @@ https://www.sec.gov/forms
 
 *TECHNICAL MATERIALS - FILINGS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
+https://github.com/datasets/edgar
 https://github.com/sec-edgar/sec-edgar
 https://github.com/alions7000/SEC-EDGAR-text
 https://www.sec.gov/Archives/edgar/daily-index/
