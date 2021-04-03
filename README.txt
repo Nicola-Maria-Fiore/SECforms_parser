@@ -35,7 +35,7 @@ https://github.com/sec-edgar/sec-edgar (download)
 https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
 https://github.com/lukerosiak/pysec (xml)
 https://github.com/tooksoi/ScraXBRL (xml)
-https://github.com/andrewkittredge/financial_fundamentals (xbrl)
+https://github.com/andrewkittredge/financial_fundamentals (tsv)
 
 
 
