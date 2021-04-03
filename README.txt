@@ -33,9 +33,10 @@ https://github.com/datasets/edgar (download)
 https://github.com/edgarminers/python-edgar (download)
 https://github.com/sec-edgar/sec-edgar (download)
 https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
+https://github.com/andrewkittredge/financial_fundamentals (tsv)
 https://github.com/lukerosiak/pysec (xml)
 https://github.com/tooksoi/ScraXBRL (xml)
-https://github.com/andrewkittredge/financial_fundamentals (tsv)
+
 
 
 
