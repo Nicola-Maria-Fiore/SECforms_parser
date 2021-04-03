@@ -18,8 +18,10 @@ https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 
-*TECHNICAL MATERIALS
+*STUDY MATERIALS - LOUGHRAN and MCDONALD
 https://sraf.nd.edu/
+
+*TECHNICAL MATERIALS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 https://www.sec.gov/Archives/edgar/daily-index/
 https://www.sec.gov/Archives/edgar/full-index/
@@ -30,16 +32,11 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
-https://sraf.nd.edu/ (download, html)
-https://github.com/datasets/edgar (download)
-https://github.com/edgarminers/python-edgar (download)
-https://github.com/sec-edgar/sec-edgar (download)
+https://sraf.nd.edu/ (html)
 https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
 https://github.com/andrewkittredge/financial_fundamentals (from tsv to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
-
-
 
 
 
