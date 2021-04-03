@@ -73,11 +73,6 @@ fill "resources/xml/"
 py main.py -xml
 #to "results/xml/"
 
-*STATA DO FILES
-fill "resources/"
-py main.py -do_files
-#to "results/do_files/"
-
 *SEE RESULTS
 see "results/"
 
