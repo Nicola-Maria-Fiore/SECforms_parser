@@ -40,15 +40,6 @@ https://github.com/andrewkittredge/financial_fundamentals (xbrl)
 
 
 
-
-
-
-
-
-
-
-
-
 ------------------OLD------------------
 *PRELIMINARY
 fill "resources/varlist.csv"
@@ -62,36 +53,30 @@ py main.py -b
 
 
 
-
-
-TO DO
-*DOWNLOAD FILINGS FROM LIST - FINAL REPORT (not-downloaded?)
+*DOWNLOAD FILINGS - FINAL REPORT (not-downloaded?)
 fill "resources/filings.csv"
 py main.py -download
-#to "results/filings/txt"
-#to "results/filings/txt"
-#to "results/filings/html"
+#to "results/txt/"
 
-
-
-*FROM XML FILINGS CREATE SQL DATABASE
-fill "resources/xml.csv"
-fill "resources/xml_schema.csv"
-py main.py -xml
-#to "results/sql_statement.txt"
-
-
-*FROM XBRL FILINGS CREATE SQL DATABASE (https://github.com/search?o=desc&q=xbrl&s=stars&type=Repositories)
-fill "resources/xbrl.csv"
-fill "resources/xbrl_schema.csv"
-py main.py -xbrl
-#to "results/filings/xbrl/"
-
-*CONVERT HTML FILINGS INTO TXT (https://github.com/alions7000/SEC-EDGAR-text)
-fill "resources/html.csv"
-fill "resources/html_schema.csv"
+*FROM HTML TO TXT
+fill "resources/html/"
 py main.py -html
-#to "results/filings/html/"
+#to "results/html/"
+
+*FROM TSV TO SQL
+fill "resources/tsv/"
+py main.py -tsv
+#to "results/tsv/"
+
+*FROM XML TO SQL
+fill "resources/xml/"
+py main.py -xml
+#to "results/xml/"
+
+*STATA DO FILES
+fill "resources/"
+py main.py -do_files
+#to "results/do_files/"
 
 *SEE RESULTS
 see "results/"
