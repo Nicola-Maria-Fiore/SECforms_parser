@@ -1,0 +1,10 @@
+*XML SCHEMA
+fill "resources/xml/"
+-----------
+
+*ODBC SERVER
+download latest driver from https://dev.mysql.com/downloads/connector/odbc/ -> "------------"
+install ".exe"
+Windows Search: "ODBC Data Sources"
+ODBC Data Sources Administrator -> "User DSN" -> "Add" -> "MySQL" -> "OK" 
+ODBC Data Sources Administrator -> "User DSN" -> "MySQL" -> "Configure" -> {"Database":"","Server":"","User Name":"","Description":"","SSL Mode":"Require","Port":"","Password":"Adgj1234!Adgj1234!"} -> "Test" -> "Save" -> "OK"
