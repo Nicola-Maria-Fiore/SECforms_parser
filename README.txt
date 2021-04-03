@@ -53,9 +53,9 @@ py main.py -b
 
 
 
-*DOWNLOAD FILINGS - FINAL REPORT (not-downloaded?)
-fill "resources/filings.csv"
-py main.py -download
+*DOWNLOAD TXT - FINAL REPORT (not-downloaded?)
+fill "resources/txt/"
+py main.py -txt
 #to "results/txt/"
 
 *FROM HTML TO TXT
