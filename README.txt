@@ -1,6 +1,9 @@
 *INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
+*STUDY MATERIALS - LOUGHRAN and MCDONALD
+https://sraf.nd.edu/
+
 *STUDY MATERIALS - SEC
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/edgar.shtml
@@ -29,14 +32,13 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
-https://sraf.nd.edu/ (general)
 https://github.com/datasets/edgar (download)
 https://github.com/edgarminers/python-edgar (download)
 https://github.com/sec-edgar/sec-edgar (download)
 https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
-https://github.com/andrewkittredge/financial_fundamentals (tsv)
-https://github.com/lukerosiak/pysec (xml)
-https://github.com/tooksoi/ScraXBRL (xml)
+https://github.com/andrewkittredge/financial_fundamentals (from tsv to sql)
+https://github.com/lukerosiak/pysec (from xml to sql)
+https://github.com/tooksoi/ScraXBRL (from xml to sql)
 
 
 
