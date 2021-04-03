@@ -1,9 +1,6 @@
 *INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
-*STUDY MATERIALS - LOUGHRAN and MCDONALD
-https://sraf.nd.edu/
-
 *STUDY MATERIALS - SEC
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/edgar.shtml
@@ -21,7 +18,8 @@ https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 
-*TECHNICAL MATERIALS - FILINGS and FORMS
+*TECHNICAL MATERIALS
+https://sraf.nd.edu/
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 https://www.sec.gov/Archives/edgar/daily-index/
 https://www.sec.gov/Archives/edgar/full-index/
@@ -32,6 +30,7 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
+https://sraf.nd.edu/ (download, html)
 https://github.com/datasets/edgar (download)
 https://github.com/edgarminers/python-edgar (download)
 https://github.com/sec-edgar/sec-edgar (download)
