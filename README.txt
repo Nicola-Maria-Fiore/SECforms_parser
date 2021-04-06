@@ -18,8 +18,9 @@ https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 
-*STUDY MATERIALS - LOUGHRAN and MCDONALD
+*STUDY MATERIALS - LOUGHRAN and MCDONALD, ANDREW KITTREDGE
 https://sraf.nd.edu/
+http://blog.andrewonfinance.com/
 
 *TECHNICAL MATERIALS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
@@ -32,7 +33,7 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
-https://github.com/andrewkittredge/financial_fundamentals (from tsv to sql)
+https://github.com/andrewkittredge/financial_fundamentals (from xml to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
 
