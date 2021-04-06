@@ -53,14 +53,13 @@ py main.py -b
 
 
 
-*DOWNLOAD TXT - FINAL REPORT (not-downloaded?)
+*DOWNLOAD TXT - FINAL REPORT
 fill "resources/txt/"
 py main.py -txt
 
 *FROM HTML TO TXT
 fill "resources/html/"
 py main.py -html
-#to "results/html/"
 
 *FROM TSV TO SQL
 fill "resources/tsv/"
