@@ -10,9 +10,8 @@ https://www.sec.gov/page/corpfin-section-landing
 https://www.sec.gov/dera
 https://www.sec.gov/search/search.htm (FULL TEXT SEARCH)
 
-*STUDY MATERIALS - LOUGHRAN and MCDONALD, ANDREW KITTREDGE
+*STUDY MATERIALS - LOUGHRAN and MCDONALD
 https://sraf.nd.edu/
-http://blog.andrewonfinance.com/
 
 *STUDY MATERIALS - FILINGS and FORMS
 https://www.sec.gov/info/edgar/forms/edgform.pdf
