@@ -32,7 +32,6 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
-https://sraf.nd.edu/ (html)
 https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
 https://github.com/andrewkittredge/financial_fundamentals (from tsv to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
@@ -64,12 +63,10 @@ py main.py -html
 *FROM TSV TO SQL
 fill "resources/tsv/"
 py main.py -tsv
-#to "results/tsv/"
 
 *FROM XML TO SQL
 fill "resources/xml/"
 py main.py -xml
-#to "results/xml/"
 
 *SEE RESULTS
 see "results/"
