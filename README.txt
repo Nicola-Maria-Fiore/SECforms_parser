@@ -33,6 +33,9 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
+https://github.com/brentmountford/tsv-to-sql
+https://sqlizer.io/tsv-to-sqlserver/#/
+https://github.com/sqlizer-io
 https://github.com/andrewkittredge/financial_fundamentals (from xml to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
