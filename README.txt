@@ -32,7 +32,6 @@ https://www.sec.gov/edgar/filer-information/current-edgar-technical-specificatio
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *GITHUB REPOS
-https://github.com/alions7000/SEC-EDGAR-text (from html to txt)
 https://github.com/andrewkittredge/financial_fundamentals (from tsv to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
