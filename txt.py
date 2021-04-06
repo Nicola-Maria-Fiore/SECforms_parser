@@ -9,8 +9,8 @@ import time
 import os
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'}
 base_url = "https://www.sec.gov/Archives/"
-database = "resources/database.dta"
-database_check = "resources/database_check.dta"
+database = "resources/txt/txt.dta"
+txt_report = "results/txt/txt_report.dta"
 
 def requests_retry_session(
     retries=5,
@@ -68,12 +68,12 @@ def checkFiles():
     for i in df.index.values:
         print("Checking "+str(i))
         file_name = df.loc[i,"FName"]
-        fpath = "results/" + file_name.replace("edgar/data/","").replace("/","_")
+        fpath = "results/txt/" + file_name.replace("edgar/data/","").replace("/","_")
         if os.path.isfile(fpath):
-            df.loc[i,"downloaded"] = 1
+            df.loc[i,"Not Downloaded"] = 0
         else:
-            df.loc[i,"downloaded"] = 0
-    df.to_stata(database_check)
+            df.loc[i,"Not Downloaded"] = 1
+    df.to_stata(txt_report)
             
 
 if __name__ =="__main__":
