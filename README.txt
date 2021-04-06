@@ -56,7 +56,6 @@ py main.py -b
 *DOWNLOAD TXT - FINAL REPORT (not-downloaded?)
 fill "resources/txt/"
 py main.py -txt
-#to "results/txt/"
 
 *FROM HTML TO TXT
 fill "resources/html/"
