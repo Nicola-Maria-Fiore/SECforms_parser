@@ -61,8 +61,8 @@ see "results/"
 
 --------------------------------------------------------------------------------------------
 *GITHUB REPOS
-https://sqlizer.io/tsv-to-sqlserver/#/ (from tsv to sql)
-https://github.com/sqlizer-io (from tsv to sql)
+https://www.beautifyconverter.com/
+https://github.com/search?o=desc&q=csv+to+sql&s=stars&type=Repositories
 https://github.com/andrewkittredge/financial_fundamentals (from xml to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
