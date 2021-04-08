@@ -21,6 +21,7 @@ https://www.sec.gov/forms
 https://www.sec.gov/structureddata/osd-inline-xbrl.html
 https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
+https://github.com/TiesdeKok/xbrl-api-playground
 
 
 ------------------OLD------------------
