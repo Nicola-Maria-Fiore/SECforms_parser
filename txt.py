@@ -9,6 +9,7 @@ import time
 import os
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'}
 base_url = "https://www.sec.gov/Archives/"
+
 database = "resources/txt/txt.dta"
 txt_report = "results/txt/txt_report.dta"
 
@@ -47,7 +48,7 @@ def main():
         try:
             r = req.get(url, headers=HEADERS)
             if r.status_code == 200:
-                new_file = "results/" + file_name.replace("edgar/data/","").replace("/","_")
+                new_file = "results/txt/" + file_name.replace("edgar/data/","").replace("/","_")
                 with open(new_file, "w") as f:
                     f.write(r.text)
                 print("Downloaded record {}".format(str(i)))
@@ -75,19 +76,3 @@ def checkFiles():
             df.loc[i,"Not Downloaded"] = 1
     df.to_stata(txt_report)
             
-
-if __name__ =="__main__":
-    if len(sys.argv)< 2:
-        print("Invalid operation")
-        sys.exit()
-
-    if (sys.argv[1]=="-a"):
-        hdd = psutil.disk_usage('/')
-        if (hdd.free / (2**30)) < 20:
-            print("Not enough space")
-            sys.exit()
-        main()
-    elif (sys.argv[1]=="-b"):
-        checkFiles()
-
-    print("Done!")
