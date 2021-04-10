@@ -46,9 +46,10 @@ py main.py -txt
 fill "resources/html/"
 py main.py -html
 
-*FROM TSV TO SQL
-fill "resources/tsv/"
-py main.py -tsv
+*FROM DELIMITER-SEPARATED TABLE TO SQL
+fill "resources/table/"
+set delimiter (e.g., ","; "|"; "\t")
+py main.py -table "," 
 
 *FROM XML TO SQL
 fill "resources/xml/"
