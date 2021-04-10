@@ -10,7 +10,7 @@ def main():
     out_folder = "results/html"
 
     for filename in os.listdir(source_folder):
-        if filename.endswith(".html") or filename.endswith(".html"):
+        if filename.endswith(".html") or filename.endswith(".htm") filename.endswith(".txt"):
             with open(os.path.join(source_folder, filename), 'r') as f:
                 content = f.read()
             res = HTMLtoTEXT(content)
