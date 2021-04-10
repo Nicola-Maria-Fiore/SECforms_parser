@@ -71,8 +71,8 @@ def checkFiles():
         file_name = df.loc[i,"FName"]
         fpath = "results/txt/" + file_name.replace("edgar/data/","").replace("/","_")
         if os.path.isfile(fpath):
-            df.loc[i,"Not Downloaded"] = 0
+            df.loc[i,"not_downloaded"] = 0
         else:
-            df.loc[i,"Not Downloaded"] = 1
+            df.loc[i,"not_downloaded"] = 1
     df.to_stata(txt_report)
             
