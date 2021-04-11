@@ -46,7 +46,7 @@ py main.py -txt
 fill "resources/html/"
 py main.py -html
 
-*FROM DELIMITER-SEPARATED TABLE TO SQL
+*FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/"
 set delimiter (e.g., ","; "|"; "\t")
 py main.py -table "," 
