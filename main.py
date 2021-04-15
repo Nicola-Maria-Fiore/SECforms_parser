@@ -3,6 +3,7 @@ from genFiles import createDoFiles
 from xmlParser import Parse
 import Html
 import pandas as pd
+import CSVtoSQL
 import txt
 import sys
 
@@ -29,6 +30,11 @@ if __name__ == "__main__":
         txt.checkFiles()
     elif sys.argv[1]=="-html":
         Html.main()
+    elif sys.argv[1]=="-table" and len(sys.argv)>2:
+        delimiter = sys.argv[2] 
+        if delimiter == "tab":
+            delimiter = '\t'
+        CSVtoSQL.main(delimiter)
     else:
         print("Incorrect arguments!")
 
