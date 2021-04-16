@@ -9,9 +9,13 @@ mysqld (or go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "St
 \sql
 \connect root@localhost
 CREATE DATABASE db;
-use db;
-show tables;
-source "edgar\results\table\data.sql";
+USE db;
+SHOW TABLES;
+SOURCE "edgar\results\table\data.sql";
+
+*DROP ALL TABLES
+DROP TABLE table1
+DROP TABLE table2 ...
 
 
 --------------------------------------------------------------------------------------------
