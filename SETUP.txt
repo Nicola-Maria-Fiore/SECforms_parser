@@ -1,8 +1,4 @@
-*XML SCHEMA
-fill "resources/xml/"
-
-
---------------------------------------------------------------------------------------------
+*FROM (DELIMITER-SEPARATED) TABLE TO SQL
 *MYSQL
 open "MySQL Shell"
 mysqld (or go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start")
@@ -13,12 +9,6 @@ USE db;
 SHOW TABLES;
 SOURCE "edgar\results\table\data.sql";
 
-*DROP ALL TABLES
-DROP TABLE table1
-DROP TABLE table2 ...
-
-
---------------------------------------------------------------------------------------------
 *ODBC SERVER
 Windows Search: "ODBC Data Sources"
 ODBC Data Sources Administrator -> "User DSN" -> "Add" -> "MySQL Unicode 8.0 Driver " -> "Finish" 
@@ -29,3 +19,13 @@ User:"root"
 Password:"123456"
 Database:"db"
 press "Test"; press "OK"; press "OK"
+
+*DROP ALL TABLES
+DROP TABLE table1
+DROP TABLE table2 ...
+
+
+--------------------------------------------------------------------------------------------
+*FROM XML TO SQL
+fill "resources/xml/schema.sql"
+fill "resources/xml/schema.csv
