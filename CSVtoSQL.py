@@ -32,7 +32,7 @@ def CSVtoSQL(f, delimiter, tname):
             create_statement = genCREATE(list(df.columns), row, tname)          
         record = []
         for col in df.columns:
-            record.append('"'+str(row[col])+'"')
+            record.append('"'+str(row[col]).replace('"','').replace("'",'')+'"')
         records.append(",".join(record))
     
     insert_statement = genINSERT(records, list(df.columns), tname)
