@@ -48,8 +48,8 @@ py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/"
-set delimiter (e.g., ","; "|"; "\t")
-py main.py -table "," 
+set delimiter (e.g., ","; "|"; "tab")
+py main.py -table "tab" 
 
 *FROM XML TO SQL
 fill "resources/xml/"
@@ -63,8 +63,6 @@ see "results/"
 
 --------------------------------------------------------------------------------------------
 *GITHUB REPOS
-https://www.beautifyconverter.com/
-https://github.com/search?o=desc&q=csv+to+sql&s=stars&type=Repositories
 https://github.com/andrewkittredge/financial_fundamentals (from xml to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
