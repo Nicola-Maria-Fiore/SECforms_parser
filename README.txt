@@ -17,6 +17,7 @@ https://sraf.nd.edu/
 https://www.sec.gov/info/edgar/forms/edgform.pdf
 https://www.sec.gov/forms
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
+https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 
 *STUDY MATERIALS - XBRL
 https://www.sec.gov/structureddata/osd-inline-xbrl.html
@@ -75,6 +76,5 @@ https://www.sec.gov/Archives/edgar/full-index/
 https://www.sec.gov/include/ticker.txt
 https://www.sec.gov/files/company_tickers.json
 https://www.sec.gov/Archives/edgar/cik-lookup-data.txt
-https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
 https://www.sec.gov/data.json
 
