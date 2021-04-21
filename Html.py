@@ -3,7 +3,9 @@ import os
 
 def HTMLtoTEXT(html_doc):
     soup = BeautifulSoup(html_doc, 'html.parser')
-    return soup.text
+    content = soup.text.split(" ")
+    content = [c for c in content if len(c)<=30]
+    return " ".join(content)
 
 def main():
     source_folder = "resources/html"
