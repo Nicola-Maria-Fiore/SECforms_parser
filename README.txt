@@ -3,28 +3,49 @@ pip install -r requirements.txt
 
 
 --------------------------------------------------------------------------------------------
-*STUDY MATERIALS - SEC
-https://www.investor.gov/
+*STUDY MATERIALS - SEC - DATA
 https://www.sec.gov/sec-data-resources
-https://www.sec.gov/edgar.shtml
-https://www.sec.gov/page/corpfin-section-landing
-https://www.sec.gov/dera
+https://www.sec.gov/dera/data
 https://www.sec.gov/search/search.htm (FULL TEXT SEARCH)
 
-*STUDY MATERIALS - LOUGHRAN and MCDONALD
-https://sraf.nd.edu/
+*STUDY MATERIALS - SEC - DIVISIONS & OFFICES
+https://www.sec.gov/divisions.shtml
+https://www.sec.gov/page/corpfin-section-landing
+https://www.sec.gov/page/enforcement-section-landing
+https://www.sec.gov/investment-management
+https://www.sec.gov/dera
+https://www.sec.gov/divisions/trading-markets
 
-*STUDY MATERIALS - FILINGS and FORMS
-https://www.sec.gov/info/edgar/forms/edgform.pdf
+*STUDY MATERIALS - SEC - ENFORCEMENT
+https://www.sec.gov/page/litigation
+https://www.sec.gov/litigations/sec-action-look-up
+
+*STUDY MATERIALS - SEC - REGULATION
+https://www.sec.gov/page/regulation
+https://www.investor.gov/introduction-investing/investing-basics/role-sec/laws-govern-securities-industry
+https://www.investor.gov/introduction-investing/investing-basics/role-sec/researching-federal-securities-laws-through-sec
+
+*STUDY MATERIALS - SEC - EDUCATION
+https://www.investor.gov/
+https://www.investor.gov/introduction-investing/getting-started/researching-investments
+https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work
+https://www.investor.gov/introduction-investing/investing-basics/glossary
+
+*STUDY MATERIALS - SEC - FILINGS
+https://www.sec.gov/edgar.shtml
 https://www.sec.gov/forms
+https://www.sec.gov/info/edgar/forms/edgform.pdf
 https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
 https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
-
-*STUDY MATERIALS - XBRL
 https://www.sec.gov/structureddata/osd-inline-xbrl.html
-https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 https://github.com/TiesdeKok/xbrl-api-playground
+
+*STUDY MATERIALS - SEC - FINRA
+https://www.finra.org/#/
+https://www.finra.org/investors/tools-and-calculators
+http://finra-markets.morningstar.com/MarketData/
+https://tools.finra.org/fund_analyzer/
 
 
 ------------------OLD------------------
@@ -69,8 +90,9 @@ see "results/"
 https://github.com/andrewkittredge/financial_fundamentals (from xml to sql)
 https://github.com/lukerosiak/pysec (from xml to sql)
 https://github.com/tooksoi/ScraXBRL (from xml to sql)
+https://sraf.nd.edu/ (textual analysis)
 
-*TECHNICAL MATERIALS
+*SEC - TECHNICAL MATERIALS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 https://www.sec.gov/Archives/edgar/daily-index/
 https://www.sec.gov/Archives/edgar/full-index/
