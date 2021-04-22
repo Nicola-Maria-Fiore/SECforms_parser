@@ -4,6 +4,7 @@ pip install -r requirements.txt
 
 --------------------------------------------------------------------------------------------
 *STUDY MATERIALS - SEC
+https://www.investor.gov/
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/edgar.shtml
 https://www.sec.gov/page/corpfin-section-landing
