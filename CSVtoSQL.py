@@ -26,7 +26,7 @@ def CSVtoSQL(f, delimiter, tname):
     insert_statement = None
 
     records = []
-    df = pd.read_csv(f, sep=delimiter, warn_bad_lines=True, error_bad_lines=False)
+    df = pd.read_csv(f, sep=delimiter, warn_bad_lines=True, error_bad_lines=False, encoding='utf-8')
     for index, row in df.iterrows():
         if create_statement == None:
             create_statement = genCREATE(list(df.columns), row, tname)          
@@ -50,8 +50,8 @@ def main(separator):
             res = CSVtoSQL(os.path.join(source_folder, filename), separator, filename)
             full_sql += res
             filename = re.sub(r'\..*','.sql',filename)
-            with open(os.path.join(out_folder, filename), 'w') as f:
+            with open(os.path.join(out_folder, filename), 'w', encoding='utf-8') as f:
                 f.write(res) 
 
-    with open(os.path.join(out_folder, "data.sql"), 'w') as f:
+    with open(os.path.join(out_folder, "data.sql"), 'w', encoding='utf-8') as f:
         f.write(full_sql)       
