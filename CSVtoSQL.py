@@ -26,7 +26,7 @@ def CSVtoSQL(f, delimiter, tname):
     insert_statement = None
 
     records = []
-    df = pd.read_csv(f, sep=delimiter, warn_bad_lines=True, error_bad_lines=False)
+    df = pd.read_csv(f, sep=delimiter, warn_bad_lines=True, error_bad_lines=False, engine='python')
     for index, row in df.iterrows():
         if create_statement == None:
             create_statement = genCREATE(list(df.columns), row, tname)          
