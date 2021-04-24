@@ -53,7 +53,7 @@ def CSVtoSQL(f, delimiter, tname):
     for index, row in df.iterrows():
         current_it += 1
         if current_it%100==0:
-            printProgressBar(current_it,total)
+            printProgressBar(current_it,total_it)
         
         if create_statement == None:
             create_statement = genCREATE(list(df.columns), row, tname)          
@@ -61,7 +61,7 @@ def CSVtoSQL(f, delimiter, tname):
         for col in df.columns:
             record.append('"'+str(row[col]).replace('"','').replace("'",'')+'"')
         records.append(",".join(record))
-    printProgressBar(total,total)
+    printProgressBar(total_it,total_it)
     
     insert_statement = genINSERT(records, list(df.columns), tname)
     return create_statement + insert_statement
