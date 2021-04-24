@@ -40,7 +40,6 @@ def CSVtoSQL(f, delimiter, tname):
 
 
 def main(separator):
-    full_sql = ""
     source_folder = "resources/table"
     out_folder = "results/table"
 
@@ -48,10 +47,9 @@ def main(separator):
         if not filename.endswith(".keep"):
             print("-{}".format(filename))
             res = CSVtoSQL(os.path.join(source_folder, filename), separator, filename)
-            full_sql += res
             filename = re.sub(r'\..*','.sql',filename)
             with open(os.path.join(out_folder, filename), 'w', encoding='utf-8') as f:
                 f.write(res) 
 
-    with open(os.path.join(out_folder, "data.sql"), 'w', encoding='utf-8') as f:
-        f.write(full_sql)       
+            with open(os.path.join(out_folder, "data.sql"), 'a', encoding='utf-8') as f:
+                f.write(res)       
