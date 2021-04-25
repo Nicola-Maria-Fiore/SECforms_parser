@@ -71,11 +71,13 @@ fill "resources/html/"
 py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
+see "SETUP.txt"
 fill "resources/table/"
 set delimiter (e.g., ","; "|"; "tab")
-py main.py -table "tab" 
+py main.py -table "|"
 
 *FROM XML TO SQL
+see "SETUP.txt"
 fill "resources/xml/"
 py main.py -xml
 
@@ -99,5 +101,3 @@ https://www.sec.gov/Archives/edgar/full-index/
 https://www.sec.gov/include/ticker.txt
 https://www.sec.gov/files/company_tickers.json
 https://www.sec.gov/Archives/edgar/cik-lookup-data.txt
-https://www.sec.gov/data.json
-
