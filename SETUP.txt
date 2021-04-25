@@ -1,16 +1,16 @@
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
-*MYSQL
-download and install MySQL ("Windows (x86, 32-bit), MSI Installer" from https://dev.mysql.com/downloads/installer/)
+*MYSQL - FIRST TIME
+install MySQL ("Windows (x86, 32-bit), MSI Installer" from https://dev.mysql.com/downloads/installer/)
+go to "C:\ProgramData\MySQL\MySQL Server 8.0\my.ini"-> set secure-file-priv=""
 go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
-open "MySQL Shell"
+open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
 \connect root@localhost 
 CREATE DATABASE db;
 USE db;
 SHOW TABLES;
-SOURCE "C:\Python\edgar\results\table\data.sql";
 
-*ODBC SERVER
+*ODBC SERVER - FIRST TIME
 Windows Search: "ODBC Data Sources"
 ODBC Data Sources Administrator -> "User DSN" -> "Add" -> "MySQL Unicode 8.0 Driver " -> "Finish" 
 Data Source Name:"database"
@@ -21,11 +21,18 @@ Password:"123456"
 Database:"db"
 press "Test"; press "OK"; press "OK"
 
-*DROP DATABASE
-DROP DATABASE db;
+*MYSQL - STANDARD
+go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
+open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
+\sql
+\connect root@localhost 
+USE db;
+SHOW TABLES;
+source.txt (SOURCE "C:\Python\edgar\results\table\table.sql";)
+load_data.txt (LOAD DATA INFILE 'C:\Python\edgar\resources\table\ppl_names.txt' INTO TABLE ppl FIELDS TERMINATED BY '|' OPTIONALLY ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n' STARTING BY '';)
 
-*DROP ALL TABLES
-DROP TABLE table1;
+*DROP ALL TABLES (*DROP DATABASE)
+DROP TABLE table1; (DROP DATABASE db;)
 DROP TABLE table2; ...
 
 
