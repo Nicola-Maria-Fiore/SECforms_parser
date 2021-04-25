@@ -79,5 +79,5 @@ def main(separator):
             with open(os.path.join(out_folder, filename), 'w', encoding='utf-8') as f:
                 f.write(res) 
 
-            with open(os.path.join(out_folder, "data.sql"), 'a', encoding='utf-8') as f:
+            with open(os.path.join(out_folder, "table.sql"), 'a', encoding='utf-8') as f:
                 f.write(res)       
