@@ -35,11 +35,33 @@ USE db;
 SHOW TABLES;
 SOURCE "C:/Python/edgar/results/table/table.sql";
 
-1) convert to 'UTF8MB4' (SET NAMES 'UTF8MB4';)
-2) table.txt:
-CREATE TABLE etc etc
-LOAD DATA INFILE 'C:/Python/edgar/resources/table/ppl_names.txt' INTO TABLE ppl FIELDS TERMINATED BY '|' LINES TERMINATED BY '\n' STARTING BY '';
-(CHARACTER SET 'UTF8MB4' ENCLOSED BY '"' ESCAPED BY '\\')
+0.
+DROP TABLE ppl;
+
+1.
+CREATE TABLE IF NOT EXISTS ppl (
+ 	FACTSET_PERSON_ID varchar(300),
+	PEOPLE_NAME_TYPE varchar(300),
+	PEOPLE_NAME_VALUE varchar(300) 
+)
+CHARACTER SET 'utf8mb4'
+COLLATE 'utf8mb4_0900_ai_ci';
+
+2.
+LOAD DATA INFILE 'C:/Python/edgar/resources/table/ppl_names.txt' INTO TABLE ppl
+CHARACTER SET 'utf8mb4'
+FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
+LINES TERMINATED BY '\n' STARTING BY '';
+
+3.
+TABLE ppl INTO OUTFILE 'C:/Directory/ppl.txt'
+CHARACTER SET 'utf8mb4'
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
+LINES TERMINATED BY '\n' STARTING BY '';
+
+----------------------------
+table.txt: -> CREATE TABLE COLLATE 'utf8mb4';, LOAD DATA
+
 
 *DROP ALL TABLES (*DROP DATABASE)
 DROP TABLE table1; (DROP DATABASE db;)
