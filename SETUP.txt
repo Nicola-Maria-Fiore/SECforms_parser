@@ -9,6 +9,7 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
 \connect root@localhost
 SET NAMES 'utf8mb4';
+SET CHARACTER SET 'utf8mb4';
 CREATE DATABASE db;
 USE db;
 SHOW TABLES;
@@ -38,9 +39,9 @@ SOURCE "C:/Python/edgar/results/table/table.sql";
 1.
 DROP TABLE ppl;
 CREATE TABLE IF NOT EXISTS ppl (
- 	FACTSET_PERSON_ID varchar(300),
-	PEOPLE_NAME_TYPE varchar(300),
-	PEOPLE_NAME_VALUE varchar(300) 
+ 	FACTSET_PERSON_ID varchar(255),
+	PEOPLE_NAME_TYPE varchar(255),
+	PEOPLE_NAME_VALUE varchar(255) 
 )
 CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
