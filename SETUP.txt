@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS ppl (
 	PEOPLE_NAME_VALUE varchar(300) 
 )
 CHARACTER SET 'utf8mb4'
-COLLATE ' utf8mb4_unicode_ci';
+COLLATE 'utf8mb4_unicode_ci';
 
 2.
 LOAD DATA INFILE 'C:/Python/edgar/resources/table/ppl_names.txt' INTO TABLE ppl
@@ -51,19 +51,14 @@ CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
 
-3.
-TABLE ppl INTO OUTFILE 'C:/Directory/ppl.txt'
+*DROP TABLE
+DROP TABLE table
+
+*EXPORT TABLE
+TABLE table INTO OUTFILE 'C:/Directory/table.txt'
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
-
-----------------------------
-table.txt: -> CREATE TABLE COLLATE 'utf8mb4';, LOAD DATA
-
-
-*DROP ALL TABLES (*DROP DATABASE)
-DROP TABLE table1; (DROP DATABASE db;)
-DROP TABLE table2; ...
 
 
 --------------------------------------------------------------------------------------------
