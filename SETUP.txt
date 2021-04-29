@@ -1,7 +1,7 @@
 *MYSQL - FIRST TIME
 install MySQL ("Windows (x86, 32-bit), MSI Installer" from https://dev.mysql.com/downloads/installer/)
 go to "C:\ProgramData\MySQL\MySQL Server 8.0\my.ini"-> find (Ctrl+F) "secure-file-priv" -> write ' secure-file-priv="" '
-press "Windows Key" -> "Services" -> "MySQL80 -> Right-click -> select "Start"
+press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
 \connect root@localhost
@@ -25,7 +25,7 @@ press "Test"; press "OK"; press "OK"
 
 --------------------------------------------------------------------------------------------
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
-go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
+press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
 \connect root@localhost 
@@ -61,7 +61,7 @@ LINES TERMINATED BY '\r\n' STARTING BY '';
 
 --------------------------------------------------------------------------------------------
 *FROM XML TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-xml.html)
-go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
+press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
 \connect root@localhost 
