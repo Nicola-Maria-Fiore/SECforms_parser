@@ -28,7 +28,7 @@ def genCREATE(columns, row, tname):
     create_statement = "CREATE TABLE IF NOT EXISTS {} (\n {} \n);\n\n"
     sql_fields = []
     for col in columns:
-        sql_fields.append( "\t" + col + " varchar(300)")
+        sql_fields.append( "\t" + col + " VARCHAR(300)")
 
     return create_statement.format(tname,",\n".join(sql_fields))
 
