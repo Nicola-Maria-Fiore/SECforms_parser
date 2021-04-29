@@ -24,7 +24,7 @@ press "Test"; press "OK"; press "OK"
 
 
 --------------------------------------------------------------------------------------------
-*FROM (DELIMITER-SEPARATED) TABLE TO SQL
+*FROM (DELIMITER-SEPARATED) TABLE TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
 go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
@@ -60,7 +60,7 @@ LINES TERMINATED BY '\r\n' STARTING BY '';
 
 
 --------------------------------------------------------------------------------------------
-*FROM XML TO SQL
+*FROM XML TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-xml.html)
 go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
