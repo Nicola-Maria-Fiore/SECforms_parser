@@ -36,9 +36,9 @@ SOURCE "C:/Python/edgar/results/table/table.sql";
 1.
 DROP TABLE ppl;
 CREATE TABLE IF NOT EXISTS ppl (
- 	FACTSET_PERSON_ID varchar(255),
-	PEOPLE_NAME_TYPE varchar(255),
-	PEOPLE_NAME_VALUE varchar(255) 
+ 	FACTSET_PERSON_ID VARCHAR(255),
+	PEOPLE_NAME_TYPE VARCHAR(255),
+	PEOPLE_NAME_VALUE VARCHAR(255) 
 )
 CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
@@ -72,17 +72,17 @@ SOURCE "C:/Python/edgar/results/table/table.sql";
 1.
 DROP TABLE ppl;
 CREATE TABLE IF NOT EXISTS xml (
- 	FACTSET_PERSON_ID varchar(255),
-	PEOPLE_NAME_TYPE varchar(255),
-	PEOPLE_NAME_VALUE varchar(255) 
+ 	column1 VARCHAR(255),
+	column2 VARCHAR(255),
 )
 CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
+
 2.
 LOAD XML INFILE 'C:/Python/edgar/resources/xml/xml.xml' INTO TABLE xml
 CHARACTER SET 'utf8mb4'
-ROWS IDENTIFIED BY '<tagname>';
+ROWS IDENTIFIED BY '<row>';
 
 3.
 TABLE xml INTO OUTFILE 'C:/Directory/xml.xml'
