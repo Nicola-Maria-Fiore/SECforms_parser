@@ -1,6 +1,3 @@
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-*FROM (DELIMITER-SEPARATED) TABLE TO SQL
 *MYSQL - FIRST TIME
 install MySQL ("Windows (x86, 32-bit), MSI Installer" from https://dev.mysql.com/downloads/installer/)
 go to "C:\ProgramData\MySQL\MySQL Server 8.0\my.ini"-> find "secure-file-priv" -> set secure-file-priv=""
@@ -27,7 +24,7 @@ press "Test"; press "OK"; press "OK"
 
 
 --------------------------------------------------------------------------------------------
-*MYSQL - STANDARD
+*FROM (DELIMITER-SEPARATED) TABLE TO SQL
 go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
@@ -63,7 +60,32 @@ LINES TERMINATED BY '\r\n' STARTING BY '';
 
 
 --------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
 *FROM XML TO SQL
-fill "resources/xml/schema.sql"
-fill "resources/xml/schema.csv
+go to "Windows Search" -> "Services" -> "MySQL80 -> righ-click -> "Start"
+open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
+\sql
+\connect root@localhost 
+USE db;
+SHOW TABLES;
+SOURCE "C:/Python/edgar/results/table/table.sql";
+
+1.
+DROP TABLE ppl;
+CREATE TABLE IF NOT EXISTS xml (
+ 	FACTSET_PERSON_ID varchar(255),
+	PEOPLE_NAME_TYPE varchar(255),
+	PEOPLE_NAME_VALUE varchar(255) 
+)
+CHARACTER SET 'utf8mb4'
+COLLATE 'utf8mb4_unicode_ci';
+
+2.
+LOAD XML INFILE 'C:/Python/edgar/resources/xml/xml.xml' INTO TABLE xml
+CHARACTER SET 'utf8mb4'
+ROWS IDENTIFIED BY '<tagname>';
+
+3.
+TABLE xml INTO OUTFILE 'C:/Directory/xml.xml'
+CHARACTER SET 'utf8mb4'
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
+LINES TERMINATED BY '\r\n' STARTING BY '';
