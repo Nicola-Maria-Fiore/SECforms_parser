@@ -33,6 +33,9 @@ USE db;
 SHOW TABLES;
 SOURCE "C:/Python/edgar/results/table/table.sql";
 
+3.
+SELECT * FROM xml;
+
 1.
 DROP TABLE ppl;
 CREATE TABLE IF NOT EXISTS ppl (
