@@ -20,7 +20,7 @@ TCP/IP Server:"127.0.0.1"; Port:"3306"
 User:"root"
 Password:"123456"
 Database:"db"
-press "Test"; press "OK"; press "OK"
+select "Test"; select "OK"; select "OK"
 
 
 --------------------------------------------------------------------------------------------
