@@ -14,8 +14,8 @@ SHOW TABLES;
 *ODBC SERVER - FIRST TIME
 Windows Search: "ODBC Data Sources"
 ODBC Data Sources Administrator -> "User DSN" -> "Add" -> "MySQL Unicode 8.0 Driver " -> "Finish" 
-Data Source Name:"database"
-Description:"database"
+Data Source Name:"data source"
+Description:"data source"
 TCP/IP Server:"127.0.0.1"; Port:"3306"
 User:"root"
 Password:"123456"
