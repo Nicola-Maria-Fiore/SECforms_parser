@@ -3,6 +3,9 @@ pip install -r requirements.txt
 
 
 --------------------------------------------------------------------------------------------
+*STUDY MATERIALS - WRDS SEC ANALYTICS SUITE
+https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
+
 *STUDY MATERIALS - SEC - DATA
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/dera/data
@@ -63,7 +66,7 @@ py main.py -b
 --------------------------------------------------------------------------------------------
 *FUNCTIONS:
 *DOWNLOAD TXT (with FINAL REPORT)
-fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite" https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/)
+fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py -txt
 
 *FROM HTML TO TXT
