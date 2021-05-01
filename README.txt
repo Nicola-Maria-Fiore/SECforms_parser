@@ -62,8 +62,8 @@ py main.py -b
 
 --------------------------------------------------------------------------------------------
 *FUNCTIONS:
-*DOWNLOAD TXT - FINAL REPORT
-fill "resources/txt/"
+*DOWNLOAD TXT (with FINAL REPORT)
+fill "resources/txt/txt.dta" (from "WRDS SEC Analytics Suite" https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/)
 py main.py -txt
 
 *FROM HTML TO TXT
@@ -71,14 +71,13 @@ fill "resources/html/"
 py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
-see "SETUP.txt"
-fill "resources/table/"
-set delimiter (e.g., ","; "|"; "tab")
+fill "resources/table/files/"
+set delimiter (e.g., "," or "|" or "tab")
 py main.py -table "|"
 
 *FROM XML TO SQL
-see "SETUP.txt"
-fill "resources/xml/"
+fill "resources/xml/files/"
+fill "resources/xml/schema.csv"
 py main.py -xml
 
 
@@ -104,8 +103,7 @@ USE db;
 SHOW TABLES;
 
 *ODBC SERVER - FIRST TIME
-Windows Search: "ODBC Data Sources"
-ODBC Data Sources Administrator -> "User DSN" -> "Add" -> "MySQL Unicode 8.0 Driver " -> "Finish" 
+press "Windows Key -> search "ODBC Data Sources" -> select "User DSN" -> select "Add" -> select "MySQL Unicode 8.0 Driver " -> select "Finish" 
 Data Source Name:"data source"
 Description:"data source"
 TCP/IP Server:"127.0.0.1"; Port:"3306"
@@ -141,15 +139,6 @@ CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
 
-*DROP TABLE
-DROP TABLE table
-
-*EXPORT TABLE
-TABLE table INTO OUTFILE 'C:/Directory/table.txt'
-CHARACTER SET 'utf8mb4'
-FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
-LINES TERMINATED BY '\r\n' STARTING BY '';
-
 
 --------------------------------------------------------------------------------------------
 *FROM XML TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-xml.html)
@@ -159,11 +148,10 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \connect root@localhost 
 USE db;
 SHOW TABLES;
-SOURCE "C:/Python/edgar/results/table/table.sql";
+SOURCE "C:/Python/edgar/results/xml/xml.sql";
 
 1.
-DROP TABLE xml;
-CREATE TABLE IF NOT EXISTS xml (
+CREATE TABLE IF NOT EXISTS table1 (
 	column1 VARCHAR(255),
 	column2 VARCHAR(255)
 )
@@ -171,24 +159,51 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
 2.
-LOAD XML INFILE 'C:/Python/edgar/resources/xml/xml.xml' INTO TABLE xml
+LOAD XML INFILE 'C:/Python/edgar/resources/xml/file.xml' INTO TABLE xml
 CHARACTER SET 'utf8mb4'
-ROWS IDENTIFIED BY '<row>';
+ROWS IDENTIFIED BY '<table1>';
 
-3.
-SELECT * FROM xml;
 
 --------------------------------------------------------------------------------------------
-*GITHUB REPOS
-https://github.com/andrewkittredge/financial_fundamentals (from xml to sql)
-https://github.com/lukerosiak/pysec (from xml to sql)
-https://github.com/tooksoi/ScraXBRL (from xml to sql)
-https://sraf.nd.edu/ (textual analysis)
+*MAIN SQL STATEMENTS
+https://www.w3schools.com/sql/
 
-*SEC - TECHNICAL MATERIALS
+*ENCODING
+SET NAMES 'utf8mb4';
+SET CHARACTER SET 'utf8mb4';
+
+*CREATE TABLE
+CREATE TABLE IF NOT EXISTS table1 (
+	column1 VARCHAR(255),
+	column2 VARCHAR(255)
+)
+CHARACTER SET 'utf8mb4'
+COLLATE 'utf8mb4_unicode_ci';
+
+*LOAD DATA
+LOAD DATA INFILE 'C:/Python/edgar/resources/table/ppl_names.txt' INTO TABLE ppl
+CHARACTER SET 'utf8mb4'
+FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
+LINES TERMINATED BY '\r\n' STARTING BY '';
+
+*LOAD XML
+LOAD XML INFILE 'C:/Python/edgar/resources/xml/file.xml' INTO TABLE xml
+CHARACTER SET 'utf8mb4'
+ROWS IDENTIFIED BY '<table1>';
+
+*EXPORT TABLE
+TABLE table INTO OUTFILE 'C:/Directory/table.txt'
+CHARACTER SET 'utf8mb4'
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
+LINES TERMINATED BY '\r\n' STARTING BY '';
+
+
+--------------------------------------------------------------------------------------------
+*TECHNICAL MATERIALS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 https://www.sec.gov/Archives/edgar/daily-index/
 https://www.sec.gov/Archives/edgar/full-index/
 https://www.sec.gov/include/ticker.txt
 https://www.sec.gov/files/company_tickers.json
 https://www.sec.gov/Archives/edgar/cik-lookup-data.txt
+https://sraf.nd.edu/
