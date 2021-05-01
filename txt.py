@@ -41,7 +41,7 @@ def main():
         if i < start:
             continue
 
-        file_name = df.loc[i,"FName"]
+        file_name = df.loc[i,"fname"]
 
         url = urljoin(base_url, file_name)
 
@@ -68,7 +68,7 @@ def checkFiles():
     df = pd.read_stata(database)
     for i in df.index.values:
         print("Checking "+str(i))
-        file_name = df.loc[i,"FName"]
+        file_name = df.loc[i,"fname"]
         fpath = "results/txt/" + file_name.replace("edgar/data/","").replace("/","_")
         if os.path.isfile(fpath):
             df.loc[i,"not_downloaded"] = 0
