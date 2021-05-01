@@ -63,7 +63,7 @@ py main.py -b
 --------------------------------------------------------------------------------------------
 *FUNCTIONS:
 *DOWNLOAD TXT (with FINAL REPORT)
-fill "resources/txt/txt.dta" (from "WRDS SEC Analytics Suite" https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/)
+fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite" https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/)
 py main.py -txt
 
 *FROM HTML TO TXT
@@ -120,24 +120,9 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \sql
 \connect root@localhost 
 USE db;
-SHOW TABLES;
+SHOW TABLES; 
+DROP TABLE table; (OPTIONAL)
 SOURCE "C:/Python/edgar/results/table/table.sql";
-
-1.
-DROP TABLE ppl;
-CREATE TABLE IF NOT EXISTS ppl (
- 	FACTSET_PERSON_ID VARCHAR(255),
-	PEOPLE_NAME_TYPE VARCHAR(255),
-	PEOPLE_NAME_VALUE VARCHAR(255) 
-)
-CHARACTER SET 'utf8mb4'
-COLLATE 'utf8mb4_unicode_ci';
-
-2.
-LOAD DATA INFILE 'C:/Python/edgar/resources/table/ppl_names.txt' INTO TABLE ppl
-CHARACTER SET 'utf8mb4'
-FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
-LINES TERMINATED BY '\r\n' STARTING BY '';
 
 
 --------------------------------------------------------------------------------------------
@@ -148,20 +133,8 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \connect root@localhost 
 USE db;
 SHOW TABLES;
+DROP TABLE table; (OPTIONAL)
 SOURCE "C:/Python/edgar/results/xml/xml.sql";
-
-1.
-CREATE TABLE IF NOT EXISTS table1 (
-	column1 VARCHAR(255),
-	column2 VARCHAR(255)
-)
-CHARACTER SET 'utf8mb4'
-COLLATE 'utf8mb4_unicode_ci';
-
-2.
-LOAD XML INFILE 'C:/Python/edgar/resources/xml/file.xml' INTO TABLE xml
-CHARACTER SET 'utf8mb4'
-ROWS IDENTIFIED BY '<table1>';
 
 
 --------------------------------------------------------------------------------------------
@@ -172,22 +145,31 @@ https://www.w3schools.com/sql/
 SET NAMES 'utf8mb4';
 SET CHARACTER SET 'utf8mb4';
 
-*CREATE TABLE
-CREATE TABLE IF NOT EXISTS table1 (
-	column1 VARCHAR(255),
-	column2 VARCHAR(255)
+*TABLE - CREATE TABLE
+CREATE TABLE IF NOT EXISTS file_name1 (
+ 	column1 VARCHAR(300),
+	column2 VARCHAR(300)
 )
 CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
-*LOAD DATA
-LOAD DATA INFILE 'C:/Python/edgar/resources/table/ppl_names.txt' INTO TABLE ppl
+*TABLE - LOAD DATA
+LOAD DATA INFILE 'C:/Python/edgar/resources/table/file_name1.txt' INTO TABLE file_name1
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
 
-*LOAD XML
-LOAD XML INFILE 'C:/Python/edgar/resources/xml/file.xml' INTO TABLE xml
+*XML - CREATE TABLE
+CREATE TABLE IF NOT EXISTS table1 (
+	accession VARCHAR(300),
+	column1 VARCHAR(300),
+	column2 VARCHAR(300)
+)
+CHARACTER SET 'utf8mb4'
+COLLATE 'utf8mb4_unicode_ci';
+
+*XML - LOAD XML
+LOAD XML INFILE 'C:/Python/edgar/resources/xml/file_name1.xml' INTO TABLE table1
 CHARACTER SET 'utf8mb4'
 ROWS IDENTIFIED BY '<table1>';
 
