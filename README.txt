@@ -9,6 +9,7 @@ https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
 *STUDY MATERIALS - SEC - DATA
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/dera/data
+https://www.sec.gov/info/edgar/siccodes.htm
 https://www.sec.gov/search/search.htm (FULL TEXT SEARCH)
 
 *STUDY MATERIALS - SEC - DIVISIONS & OFFICES
