@@ -107,7 +107,7 @@ USE db;
 SHOW TABLES;
 
 *ODBC SERVER - FIRST TIME
-press "Windows Key -> search "ODBC Data Sources" -> select "User DSN" -> select "Add" -> select "MySQL Unicode 8.0 Driver " -> select "Finish" 
+press "Windows Key" -> search "ODBC Data Sources" -> select "User DSN" -> select "Add" -> select "MySQL Unicode 8.0 Driver " -> select "Finish" 
 Data Source Name:"data source"
 Description:"data source"
 TCP/IP Server:"127.0.0.1"; Port:"3306"
