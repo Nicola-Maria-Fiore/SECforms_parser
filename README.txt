@@ -158,13 +158,13 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
 *TABLE - LOAD DATA
-LOAD DATA INFILE 'C:/Python/edgar/resources/table/file1.txt' INTO TABLE file1
+LOAD DATA INFILE 'C:/Python/edgar/resources/table/utf-8/file1.txt' INTO TABLE file1
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
 
 *XML - CREATE TABLE
-CREATE TABLE IF NOT EXISTS file1 (
+CREATE TABLE IF NOT EXISTS table1 (
 	accession VARCHAR(300),
 	column1 VARCHAR(300),
 	column2 VARCHAR(300)
@@ -173,7 +173,7 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
 *XML - LOAD XML
-LOAD XML INFILE 'C:/Python/edgar/resources/xml/file1.xml' INTO TABLE table1
+LOAD XML INFILE 'C:/Python/edgar/resources/xml/utf-8/file1.xml' INTO TABLE table1
 CHARACTER SET 'utf8mb4'
 ROWS IDENTIFIED BY '<table1>';
 
