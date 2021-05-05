@@ -76,6 +76,7 @@ py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/files/"
+fill "resources/table/schema.csv"
 set delimiter (e.g., "," or "|" or "tab")
 py main.py -table "|"
 
@@ -150,7 +151,7 @@ SET NAMES 'utf8mb4';
 SET CHARACTER SET 'utf8mb4';
 
 *TABLE - CREATE TABLE
-CREATE TABLE IF NOT EXISTS file_name1 (
+CREATE TABLE IF NOT EXISTS table1 (
  	column1 VARCHAR(300),
 	column2 VARCHAR(300)
 )
@@ -158,7 +159,7 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
 *TABLE - LOAD DATA
-LOAD DATA INFILE 'C:/Python/edgar/resources/table/file_name1.txt' INTO TABLE file_name1
+LOAD DATA INFILE 'C:/Python/edgar/resources/table/file_name1.txt' INTO TABLE table1
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
