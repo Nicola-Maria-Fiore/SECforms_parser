@@ -76,7 +76,6 @@ py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/files/"
-fill "resources/table/schema.csv"
 set delimiter (e.g., "," or "|" or "tab")
 py main.py -table "|"
 
