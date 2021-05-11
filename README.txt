@@ -135,7 +135,7 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
 *TABLE - LOAD DATA
-LOAD DATA INFILE 'C:/Python/edgar/resources/table/utf-8/file1.txt' INTO TABLE file1
+LOAD DATA INFILE REPLACE 'C:/Python/edgar/resources/table/utf-8/file1.txt' INTO TABLE file1
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY ''
