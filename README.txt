@@ -3,6 +3,7 @@ pip install -r requirements.txt
 
 
 --------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 *STUDY MATERIALS - WRDS SEC ANALYTICS SUITE
 https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
 
@@ -65,6 +66,7 @@ py main.py -b
 
 
 --------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 *FUNCTIONS:
 *DOWNLOAD TXT (with FINAL REPORT)
 fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
@@ -92,32 +94,7 @@ see "results/"
 
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
-*SETUP
-*MYSQL - FIRST TIME
-install MySQL ("Windows (x86, 32-bit), MSI Installer" from https://dev.mysql.com/downloads/installer/)
-go to "C:\ProgramData\MySQL\MySQL Server 8.0\my.ini"-> find (Ctrl+F) "secure-file-priv" -> write ' secure-file-priv="" '
-press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
-open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
-\sql
-\connect root@localhost
-SET NAMES 'utf8mb4';
-SET CHARACTER SET 'utf8mb4';
-CREATE DATABASE db;
-USE db;
-SHOW TABLES;
-
-*ODBC SERVER - FIRST TIME
-press "Windows Key" -> search "ODBC Data Sources" -> select "User DSN" -> select "Add" -> select "MySQL Unicode 8.0 Driver " -> select "Finish" 
-Data Source Name:"data source"
-Description:"data source"
-TCP/IP Server:"127.0.0.1"; Port:"3306"
-User:"root"
-Password:"123456"
-Database:"db"
-select "Test"; select "OK"; select "OK"
-
-
---------------------------------------------------------------------------------------------
+*MYSQL
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
 press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
@@ -185,6 +162,7 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
 
 
+--------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *TECHNICAL MATERIALS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
