@@ -94,7 +94,7 @@ see "results/"
 
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
-*MYSQL
+*TABLE
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
 press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
@@ -102,31 +102,10 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 \connect root@localhost 
 USE db;
 SHOW TABLES; 
-DROP TABLE table; (OPTIONAL)
+#DROP TABLE file1;
 SOURCE "C:/Python/edgar/results/table/table.sql";
 
-
---------------------------------------------------------------------------------------------
-*FROM XML TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-xml.html)
-press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
-open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
-\sql
-\connect root@localhost 
-USE db;
-SHOW TABLES;
-DROP TABLE table; (OPTIONAL)
-SOURCE "C:/Python/edgar/results/xml/xml.sql";
-
-
---------------------------------------------------------------------------------------------
-*MAIN SQL STATEMENTS
-https://www.w3schools.com/sql/
-
-*ENCODING
-SET NAMES 'utf8mb4';
-SET CHARACTER SET 'utf8mb4';
-
-*TABLE - CREATE TABLE
+*CREATE TABLE
 CREATE TABLE IF NOT EXISTS file1 (
  	column1 VARCHAR(300),
 	column2 VARCHAR(300)
@@ -134,14 +113,27 @@ CREATE TABLE IF NOT EXISTS file1 (
 CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
-*TABLE - LOAD DATA
+*LOAD DATA
 LOAD DATA INFILE REPLACE 'C:/Python/edgar/resources/table/utf-8/file1.txt' INTO TABLE file1
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY ''
 IGNORE 1 LINES;
 
-*XML - CREATE TABLE
+
+--------------------------------------------------------------------------------------------
+*XML
+*FROM XML TO SQL (https://dev.mysql.com/doc/refman/8.0/en/load-xml.html)
+press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
+open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
+\sql
+\connect root@localhost 
+USE db;
+SHOW TABLES;
+#DROP TABLE table1;
+SOURCE "C:/Python/edgar/results/xml/xml.sql";
+
+*CREATE TABLE
 CREATE TABLE IF NOT EXISTS table1 (
 	accession VARCHAR(300),
 	column1 VARCHAR(300),
@@ -150,7 +142,7 @@ CREATE TABLE IF NOT EXISTS table1 (
 CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
 
-*XML - LOAD XML
+*LOAD XML
 LOAD XML INFILE 'C:/Python/edgar/resources/xml/utf-8/file1.xml' INTO TABLE table1
 CHARACTER SET 'utf8mb4'
 ROWS IDENTIFIED BY '<table1>';
