@@ -103,6 +103,7 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 USE db;
 SHOW TABLES; 
 #DROP TABLE file1;
+#SELECT * FROM file1;
 SOURCE "C:/Python/edgar/results/table/table.sql";
 
 *CREATE TABLE
@@ -111,14 +112,16 @@ CREATE TABLE IF NOT EXISTS file1 (
 	column2 VARCHAR(300)
 )
 CHARACTER SET 'utf8mb4'
-COLLATE 'utf8mb4_unicode_ci';
+COLLATE 'utf8mb4_unicode_ci'
+;
 
 *LOAD DATA
-LOAD DATA INFILE REPLACE 'C:/Python/edgar/resources/table/utf-8/file1.txt' INTO TABLE file1
+LOAD DATA INFILE 'C:/Python/edgar/resources/table/utf-8/file1.txt' REPLACE INTO TABLE file1
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY '|' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY ''
-IGNORE 1 LINES;
+IGNORE 1 LINES
+;
 
 
 --------------------------------------------------------------------------------------------
@@ -131,6 +134,7 @@ open "C:\Program Files\MySQL\MySQL Shell 8.0\bin\mysqlsh.exe" (MySQL Shell)
 USE db;
 SHOW TABLES;
 #DROP TABLE table1;
+#SELECT * FROM table1;
 SOURCE "C:/Python/edgar/results/xml/xml.sql";
 
 *CREATE TABLE
@@ -140,18 +144,15 @@ CREATE TABLE IF NOT EXISTS table1 (
 	column2 VARCHAR(300)
 )
 CHARACTER SET 'utf8mb4'
-COLLATE 'utf8mb4_unicode_ci';
+COLLATE 'utf8mb4_unicode_ci'
+;
 
 *LOAD XML
-LOAD XML INFILE 'C:/Python/edgar/resources/xml/utf-8/file1.xml' INTO TABLE table1
+LOAD XML INFILE 'C:/Python/edgar/resources/xml/utf-8/file1.xml' REPLACE INTO TABLE table1
 CHARACTER SET 'utf8mb4'
-ROWS IDENTIFIED BY '<table1>';
-
-*EXPORT TABLE
-TABLE table INTO OUTFILE 'C:/Directory/table.txt'
-CHARACTER SET 'utf8mb4'
-FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
-LINES TERMINATED BY '\r\n' STARTING BY '';
+ROWS IDENTIFIED BY '<table1>'
+IGNORE n LINES #until <edgarSubmission>
+;
 
 
 --------------------------------------------------------------------------------------------
