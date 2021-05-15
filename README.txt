@@ -20,13 +20,23 @@ py main.py -b
 
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
-*FUNCTIONS:
+*FUNCTIONS
 *DOWNLOAD TXT (with FINAL REPORT)
 fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py -txt
 
+*DOWNLOAD TXT - FINAL REPORT
+fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
+py main.py -txt -report
+
+*FROM  CURRENT ENCODING TO UTF-8
+fill "resources/html/files"
+fill "resources/table/files"
+fill "resources/xml/files"
+py main.py -utf-8
+
 *FROM HTML TO TXT
-fill "resources/html/"
+fill "resources/html/file"
 py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
@@ -50,6 +60,7 @@ see "results/"
 *STUDY MATERIALS
 *WRDS SEC ANALYTICS SUITE
 https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
+https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm
 
 *SEC - DATA
 https://www.sec.gov/sec-data-resources
@@ -95,7 +106,6 @@ https://www.finra.org/#/
 https://www.finra.org/investors/tools-and-calculators
 http://finra-markets.morningstar.com/MarketData/
 https://tools.finra.org/fund_analyzer/
-
 
 
 --------------------------------------------------------------------------------------------
