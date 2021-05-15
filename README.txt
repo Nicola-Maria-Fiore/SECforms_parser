@@ -1,57 +1,10 @@
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 *INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
-
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-*STUDY MATERIALS - WRDS SEC ANALYTICS SUITE
-https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
-
-*STUDY MATERIALS - SEC - DATA
-https://www.sec.gov/sec-data-resources
-https://www.sec.gov/dera/data
-https://www.sec.gov/info/edgar/siccodes.htm
-https://www.sec.gov/search/search.htm (FULL TEXT SEARCH)
-
-*STUDY MATERIALS - SEC - DIVISIONS & OFFICES
-https://www.sec.gov/divisions.shtml
-https://www.sec.gov/page/corpfin-section-landing
-https://www.sec.gov/page/enforcement-section-landing
-https://www.sec.gov/investment-management
-https://www.sec.gov/dera
-https://www.sec.gov/divisions/trading-markets
-
-*STUDY MATERIALS - SEC - ENFORCEMENT
-https://www.sec.gov/page/litigation
-https://www.sec.gov/litigations/sec-action-look-up
-
-*STUDY MATERIALS - SEC - REGULATION
-https://www.sec.gov/page/regulation
-https://www.investor.gov/introduction-investing/investing-basics/role-sec/laws-govern-securities-industry
-https://www.investor.gov/introduction-investing/investing-basics/role-sec/researching-federal-securities-laws-through-sec
-
-*STUDY MATERIALS - SEC - EDUCATION
-https://www.investor.gov/
-https://www.investor.gov/introduction-investing/getting-started/researching-investments
-https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work
-https://www.investor.gov/introduction-investing/investing-basics/glossary
-
-*STUDY MATERIALS - SEC - FILINGS
-https://www.sec.gov/edgar.shtml
-https://www.sec.gov/forms
-https://www.sec.gov/info/edgar/forms/edgform.pdf
-https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
-https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
-https://www.sec.gov/structureddata/osd-inline-xbrl.html
-http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
-https://github.com/TiesdeKok/xbrl-api-playground
-
-*STUDY MATERIALS - SEC - FINRA
-https://www.finra.org/#/
-https://www.finra.org/investors/tools-and-calculators
-http://finra-markets.morningstar.com/MarketData/
-https://tools.finra.org/fund_analyzer/
-
+*PRELIMINARY
+press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 
 ------------------OLD------------------
 *PRELIMINARY
@@ -90,6 +43,59 @@ py main.py -xml
 --------------------------------------------------------------------------------------------
 *SEE RESULTS
 see "results/"
+
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+*STUDY MATERIALS
+*WRDS SEC ANALYTICS SUITE
+https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
+
+*SEC - DATA
+https://www.sec.gov/sec-data-resources
+https://www.sec.gov/dera/data
+https://www.sec.gov/info/edgar/siccodes.htm
+https://www.sec.gov/search/search.htm (FULL TEXT SEARCH)
+
+*SEC - DIVISIONS & OFFICES
+https://www.sec.gov/divisions.shtml
+https://www.sec.gov/page/corpfin-section-landing
+https://www.sec.gov/page/enforcement-section-landing
+https://www.sec.gov/investment-management
+https://www.sec.gov/dera
+https://www.sec.gov/divisions/trading-markets
+
+*SEC - ENFORCEMENT
+https://www.sec.gov/page/litigation
+https://www.sec.gov/litigations/sec-action-look-up
+
+*SEC - REGULATION
+https://www.sec.gov/page/regulation
+https://www.investor.gov/introduction-investing/investing-basics/role-sec/laws-govern-securities-industry
+https://www.investor.gov/introduction-investing/investing-basics/role-sec/researching-federal-securities-laws-through-sec
+
+*SEC - EDUCATION
+https://www.investor.gov/
+https://www.investor.gov/introduction-investing/getting-started/researching-investments
+https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work
+https://www.investor.gov/introduction-investing/investing-basics/glossary
+
+*SEC - FILINGS
+https://www.sec.gov/edgar.shtml
+https://www.sec.gov/forms
+https://www.sec.gov/info/edgar/forms/edgform.pdf
+https://www.sec.gov/edgar/filer-information/current-edgar-technical-specifications
+https://www.sec.gov/edgar/filer-information/current-edgar-filer-manual
+https://www.sec.gov/structureddata/osd-inline-xbrl.html
+http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
+https://github.com/TiesdeKok/xbrl-api-playground
+
+*SEC - FINRA
+https://www.finra.org/#/
+https://www.finra.org/investors/tools-and-calculators
+http://finra-markets.morningstar.com/MarketData/
+https://tools.finra.org/fund_analyzer/
+
 
 
 --------------------------------------------------------------------------------------------
