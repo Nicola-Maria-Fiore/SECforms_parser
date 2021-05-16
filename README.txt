@@ -41,8 +41,9 @@ py main.py -html
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/files/"
-set delimiter (e.g., "," or "|" or "tab")
-py main.py -table "|"
+set delimiter (e.g., ',' or '|' or 'tab')
+set encloser (e.g., '"' or '')
+py main.py -table '|' '"'
 
 *FROM XML TO SQL
 fill "resources/xml/files/"
