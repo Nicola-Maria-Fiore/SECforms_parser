@@ -68,7 +68,7 @@ def CSVtoSQL(f, delimiter, tname):
 
 
 def main(separator):
-    source_folder = "resources/table"
+    source_folder = "resources/table/encoding"
     out_folder = "results/table"
 
     for filename in os.listdir(source_folder):

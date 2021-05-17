@@ -22,21 +22,21 @@ py main.py -b
 --------------------------------------------------------------------------------------------
 *FUNCTIONS
 *DOWNLOAD TXT
-fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
+fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py "-txt"
 
 *DOWNLOAD TXT - FINAL REPORT
 py main.py "-txt -report"
 
 *ENCODING
-fill "resources/html/files"
-fill "resources/table/files"
-fill "resources/xml/files"
+fill "resources/html/files/"
+fill "resources/table/files/"
+fill "resources/xml/files/"
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig"
 
 *FROM HTML TO TXT
-fill "resources/html/file"
+fill "resources/html/files/"
 py main.py "-html"
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL

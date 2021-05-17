@@ -8,7 +8,7 @@ def HTMLtoTEXT(html_doc):
     return " ".join(content)
 
 def main():
-    source_folder = "resources/html"
+    source_folder = "resources/html/encoding"
     out_folder = "results/html"
 
     for filename in os.listdir(source_folder):

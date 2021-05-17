@@ -1,0 +1,634 @@
+<SEC-DOCUMENT>0001214659-13-000058.txt : 20130107
+<SEC-HEADER>0001214659-13-000058.hdr.sgml : 20130107
+<ACCEPTANCE-DATETIME>20130107110716
+ACCESSION NUMBER:		0001214659-13-000058
+CONFORMED SUBMISSION TYPE:	D
+PUBLIC DOCUMENT COUNT:		1
+ITEM INFORMATION:		Rule 506
+FILED AS OF DATE:		20130107
+DATE AS OF CHANGE:		20130107
+EFFECTIVENESS DATE:		20130107
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ROYAL BANK OF CANADA
+		CENTRAL INDEX KEY:			0001000275
+		STANDARD INDUSTRIAL CLASSIFICATION:	COMMERCIAL BANKS, NEC [6029]
+		IRS NUMBER:				000000000
+		STATE OF INCORPORATION:			A6
+		FISCAL YEAR END:			1031
+
+	FILING VALUES:
+		FORM TYPE:		D
+		SEC ACT:		1933 Act
+		SEC FILE NUMBER:	021-189611
+		FILM NUMBER:		13514150
+
+	BUSINESS ADDRESS:	
+		STREET 1:		ROYAL BANK PLAZA
+		STREET 2:		200 BAY STREET
+		CITY:			TORONTO
+		STATE:			A6
+		ZIP:			M5J2J5
+		BUSINESS PHONE:		2128587116
+
+	MAIL ADDRESS:	
+		STREET 1:		ROYAL BANK PLAZA
+		STREET 2:		200 BAY STREET
+		CITY:			TORONTO
+		STATE:			A6
+		ZIP:			M5J2J5
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	ROYAL BANK OF CANADA \
+		DATE OF NAME CHANGE:	19950908
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>D
+<SEQUENCE>1
+<FILENAME>primary_doc.xml
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<edgarSubmission>
+
+    <schemaVersion>X0706</schemaVersion>
+
+    <submissionType>D</submissionType>
+
+    <testOrLive>LIVE</testOrLive>
+
+    <primaryIssuer>
+        <cik>0001000275</cik>
+        <entityName>ROYAL BANK OF CANADA</entityName>
+        <issuerAddress>
+            <street1>200 BAY STREET</street1>
+            <city>TORONTO</city>
+            <stateOrCountry>A6</stateOrCountry>
+            <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+            <zipCode>M5J 2J5</zipCode>
+        </issuerAddress>
+        <issuerPhoneNumber>416-974-3940</issuerPhoneNumber>
+        <jurisdictionOfInc>ONTARIO, CANADA</jurisdictionOfInc>
+        <issuerPreviousNameList>
+            <value>None</value>
+        </issuerPreviousNameList>
+        <edgarPreviousNameList>
+            <previousName>ROYAL BANK OF CANADA \</previousName>
+        </edgarPreviousNameList>
+        <entityType>Corporation</entityType>
+        <yearOfInc>
+            <overFiveYears>true</overFiveYears>
+        </yearOfInc>
+    </primaryIssuer>
+
+    <relatedPersonsList>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>W. GEOFFREY</firstName>
+                <lastName>BEATTIE</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>DAVID</firstName>
+                <middleName>F.</middleName>
+                <lastName>DENISON</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>PAULE</firstName>
+                <lastName>GAUTHIER</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>RICHARD</firstName>
+                <middleName>L.</middleName>
+                <lastName>GEORGE</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>TIMOTHY</firstName>
+                <middleName>J.</middleName>
+                <lastName>HEARN</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>ALICE</firstName>
+                <middleName>D.</middleName>
+                <lastName>LABERGE</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>JACQUES</firstName>
+                <lastName>LAMARRE</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>BRANDT</firstName>
+                <middleName>C.</middleName>
+                <lastName>LOUIE</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>MICHAEL</firstName>
+                <middleName>H.</middleName>
+                <lastName>McCAIN</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>HEATHER</firstName>
+                <lastName>MUNROE-BLUM</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>GORDON</firstName>
+                <middleName>M.</middleName>
+                <lastName>NIXON</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>DAVID</firstName>
+                <middleName>P.</middleName>
+                <lastName>O'BRIEN</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>J. PEDRO</firstName>
+                <lastName>REINHARD</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>EDWARD</firstName>
+                <lastName>SONSHINE</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>KATHLEEN</firstName>
+                <middleName>P.</middleName>
+                <lastName>TAYLOR</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>BRIDGET</firstName>
+                <middleName>A.</middleName>
+                <lastName>VAN KRALINGEN</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>VICTOR</firstName>
+                <middleName>L.</middleName>
+                <lastName>YOUNG</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Director</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>GORDON</firstName>
+                <middleName>M.</middleName>
+                <lastName>NIXON</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>JANICE</firstName>
+                <middleName>R.</middleName>
+                <lastName>FUKAKUSA</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>M. GEORGE</firstName>
+                <lastName>LEWIS</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>DAVID</firstName>
+                <middleName>I.</middleName>
+                <lastName>McKAY</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>MORTEN</firstName>
+                <middleName>N.</middleName>
+                <lastName>FRIIS</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>ZABEEN</firstName>
+                <lastName>HIRJI</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>A. DOUGLAS</firstName>
+                <lastName>McGREGOR</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+        <relatedPersonInfo>
+            <relatedPersonName>
+                <firstName>MARK</firstName>
+                <middleName>A.</middleName>
+                <lastName>STANDISH</lastName>
+            </relatedPersonName>
+            <relatedPersonAddress>
+                <street1>ROYAL BANK PLAZA</street1>
+                <street2>200 BAY STREET</street2>
+                <city>TORONTO</city>
+                <stateOrCountry>A6</stateOrCountry>
+                <stateOrCountryDescription>ONTARIO, CANADA</stateOrCountryDescription>
+                <zipCode>M5J 2J5</zipCode>
+            </relatedPersonAddress>
+            <relatedPersonRelationshipList>
+                <relationship>Executive Officer</relationship>
+            </relatedPersonRelationshipList>
+        </relatedPersonInfo>
+    </relatedPersonsList>
+
+    <offeringData>
+        <industryGroup>
+            <industryGroupType>Commercial Banking</industryGroupType>
+        </industryGroup>
+        <issuerSize>
+            <revenueRange>Over $100,000,000</revenueRange>
+        </issuerSize>
+        <federalExemptionsExclusions>
+            <item>06</item>
+        </federalExemptionsExclusions>
+        <typeOfFiling>
+            <newOrAmendment>
+                <isAmendment>false</isAmendment>
+            </newOrAmendment>
+            <dateOfFirstSale>
+                <value>2012-12-21</value>
+            </dateOfFirstSale>
+        </typeOfFiling>
+        <durationOfOffering>
+            <moreThanOneYear>false</moreThanOneYear>
+        </durationOfOffering>
+        <typesOfSecuritiesOffered>
+            <isDebtType>true</isDebtType>
+        </typesOfSecuritiesOffered>
+        <businessCombinationTransaction>
+            <isBusinessCombinationTransaction>false</isBusinessCombinationTransaction>
+        </businessCombinationTransaction>
+        <minimumInvestmentAccepted>100000</minimumInvestmentAccepted>
+        <salesCompensationList>
+            <recipient>
+                <recipientName>RBC CAPITAL MARKETS, LLC</recipientName>
+                <recipientCRDNumber>31194</recipientCRDNumber>
+                <associatedBDName>None</associatedBDName>
+                <associatedBDCRDNumber>None</associatedBDCRDNumber>
+                <recipientAddress>
+                    <street1>3 WORLD FINANCIAL CENTER</street1>
+                    <street2>200 VESEY STREET</street2>
+                    <city>NEW YORK</city>
+                    <stateOrCountry>NY</stateOrCountry>
+                    <stateOrCountryDescription>NEW YORK</stateOrCountryDescription>
+                    <zipCode>10281</zipCode>
+                </recipientAddress>
+                <statesOfSolicitationList>
+                    <value>All States</value>
+                </statesOfSolicitationList>
+                <foreignSolicitation>false</foreignSolicitation>
+            </recipient>
+            <recipient>
+                <recipientName>CREDIT SUISSE SECURITIES (USA) LLC</recipientName>
+                <recipientCRDNumber>816</recipientCRDNumber>
+                <associatedBDName>None</associatedBDName>
+                <associatedBDCRDNumber>None</associatedBDCRDNumber>
+                <recipientAddress>
+                    <street1>11 MADISON AVENUE</street1>
+                    <city>NEW YORK</city>
+                    <stateOrCountry>NY</stateOrCountry>
+                    <stateOrCountryDescription>NEW YORK</stateOrCountryDescription>
+                    <zipCode>10010</zipCode>
+                </recipientAddress>
+                <statesOfSolicitationList>
+                    <value>All States</value>
+                </statesOfSolicitationList>
+                <foreignSolicitation>false</foreignSolicitation>
+            </recipient>
+        </salesCompensationList>
+        <offeringSalesAmounts>
+            <totalOfferingAmount>5956000</totalOfferingAmount>
+            <totalAmountSold>5956000</totalAmountSold>
+            <totalRemaining>0</totalRemaining>
+        </offeringSalesAmounts>
+        <investors>
+            <hasNonAccreditedInvestors>false</hasNonAccreditedInvestors>
+            <totalNumberAlreadyInvested>20</totalNumberAlreadyInvested>
+        </investors>
+        <salesCommissionsFindersFees>
+            <salesCommissions>
+                <dollarAmount>140562</dollarAmount>
+            </salesCommissions>
+            <findersFees>
+                <dollarAmount>0</dollarAmount>
+            </findersFees>
+            <clarificationOfResponse></clarificationOfResponse>
+        </salesCommissionsFindersFees>
+        <useOfProceeds>
+            <grossProceedsUsed>
+                <dollarAmount>0</dollarAmount>
+            </grossProceedsUsed>
+            <clarificationOfResponse></clarificationOfResponse>
+        </useOfProceeds>
+        <signatureBlock>
+            <authorizedRepresentative>false</authorizedRepresentative>
+            <signature>
+                <issuerName>ROYAL BANK OF CANADA</issuerName>
+                <signatureName>/s/ DONALD DYE</signatureName>
+                <nameOfSigner>DONALD DYE</nameOfSigner>
+                <signatureTitle>ATTORNEY-IN-FACT</signatureTitle>
+                <signatureDate>2013-01-01</signatureDate>
+            </signature>
+        </signatureBlock>
+    </offeringData>
+</edgarSubmission>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
