@@ -21,12 +21,11 @@ py main.py -b
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *FUNCTIONS
-*DOWNLOAD TXT (with FINAL REPORT)
+*DOWNLOAD TXT
 fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py -txt
 
 *DOWNLOAD TXT - FINAL REPORT
-fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py -txt -report
 
 *ENCODING
