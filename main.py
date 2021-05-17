@@ -27,6 +27,7 @@ if __name__ == "__main__":
             createDoFiles(dataframes)
     elif sys.argv[1]=="-txt":
         txt.main()
+    elif sys.argv[1]=="-txt -report":
         txt.checkFiles()
     elif sys.argv[1]=="-html":
         Html.main()
