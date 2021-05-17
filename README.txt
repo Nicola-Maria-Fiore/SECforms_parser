@@ -59,17 +59,25 @@ see "results/"
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *STUDY MATERIALS
+*DATA.GOV
+https://www.data.gov/
+
+
+--------------------------------------------------------------------------------------------
 *WRDS SEC ANALYTICS SUITE
 https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/
 https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm
 
-*SEC - DATA
+
+--------------------------------------------------------------------------------------------
+*SEC
+*DATA
 https://www.sec.gov/sec-data-resources
 https://www.sec.gov/dera/data
 https://www.sec.gov/info/edgar/siccodes.htm
 https://www.sec.gov/search/search.htm (FULL TEXT SEARCH)
 
-*SEC - DIVISIONS & OFFICES
+*DIVISIONS & OFFICES
 https://www.sec.gov/divisions.shtml
 https://www.sec.gov/page/corpfin-section-landing
 https://www.sec.gov/page/enforcement-section-landing
@@ -77,22 +85,22 @@ https://www.sec.gov/investment-management
 https://www.sec.gov/dera
 https://www.sec.gov/divisions/trading-markets
 
-*SEC - ENFORCEMENT
+*ENFORCEMENT
 https://www.sec.gov/page/litigation
 https://www.sec.gov/litigations/sec-action-look-up
 
-*SEC - REGULATION
+*REGULATION
 https://www.sec.gov/page/regulation
 https://www.investor.gov/introduction-investing/investing-basics/role-sec/laws-govern-securities-industry
 https://www.investor.gov/introduction-investing/investing-basics/role-sec/researching-federal-securities-laws-through-sec
 
-*SEC - EDUCATION
+*EDUCATION
 https://www.investor.gov/
 https://www.investor.gov/introduction-investing/getting-started/researching-investments
 https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work
 https://www.investor.gov/introduction-investing/investing-basics/glossary
 
-*SEC - FILINGS
+*FILINGS
 https://www.sec.gov/edgar.shtml
 https://www.sec.gov/forms
 https://www.sec.gov/info/edgar/forms/edgform.pdf
@@ -102,7 +110,7 @@ https://www.sec.gov/structureddata/osd-inline-xbrl.html
 http://xbrlview.fasb.org/yeti/resources/yeti-gwt/Yeti.jsp
 https://github.com/TiesdeKok/xbrl-api-playground
 
-*SEC - FINRA
+*FINRA
 https://www.finra.org/#/
 https://www.finra.org/investors/tools-and-calculators
 http://finra-markets.morningstar.com/MarketData/
