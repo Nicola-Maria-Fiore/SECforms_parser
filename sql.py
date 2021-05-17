@@ -6,11 +6,13 @@ mydb = mysql.connector.connect(
   password="123456",
   database="db"
 )
+
 mycursor = mydb.cursor()
-
-sql="SHOW TABLES;"
-
+sql="""
+SHOW TABLES;
+"""
 mycursor.execute(sql)
+
 myresult = mycursor.fetchall()
 for x in myresult:
   print(x)
