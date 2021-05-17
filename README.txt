@@ -29,11 +29,12 @@ py main.py -txt
 fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py -txt -report
 
-*FROM  CURRENT ENCODING TO UTF-8
+*ENCODING
 fill "resources/html/files"
 fill "resources/table/files"
 fill "resources/xml/files"
-py main.py -utf-8
+set character set (e.g., "utf-8-sig")
+py main.py -encoding "utf-8-sig"
 
 *FROM HTML TO TXT
 fill "resources/html/file"
