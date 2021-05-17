@@ -33,7 +33,7 @@ fill "resources/html/files"
 fill "resources/table/files"
 fill "resources/xml/files"
 set character set (e.g., "utf-8-sig")
-py main.py -encoding "utf-8-sig"
+py main.py "-encoding" "utf-8-sig"
 
 *FROM HTML TO TXT
 fill "resources/html/file"
@@ -43,7 +43,7 @@ py main.py "-html"
 fill "resources/table/files/"
 set delimiter (e.g., ',' or '|' or 'tab')
 set encloser (e.g., '"' or '')
-py main.py "-table" '|' '"'
+py main.py '-table' '|' '"'
 
 *FROM XML TO SQL
 fill "resources/xml/files/"
