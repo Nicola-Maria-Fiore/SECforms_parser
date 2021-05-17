@@ -11,7 +11,7 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 base_url = "https://www.sec.gov/Archives/"
 
 database = "resources/txt/txt.dta"
-txt_report = "results/txt/txt_report.dta"
+txt_report = "results/txt/report.dta"
 
 def requests_retry_session(
     retries=5,
