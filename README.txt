@@ -23,10 +23,10 @@ py main.py -b
 *FUNCTIONS
 *DOWNLOAD TXT
 fill "resources/txt/txt.dta", read column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
-py main.py -txt
+py main.py "-txt"
 
 *DOWNLOAD TXT - FINAL REPORT
-py main.py -txt -report
+py main.py "-txt -report"
 
 *ENCODING
 fill "resources/html/files"
@@ -37,18 +37,18 @@ py main.py -encoding "utf-8-sig"
 
 *FROM HTML TO TXT
 fill "resources/html/file"
-py main.py -html
+py main.py "-html"
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/files/"
 set delimiter (e.g., ',' or '|' or 'tab')
 set encloser (e.g., '"' or '')
-py main.py -table '|' '"'
+py main.py "-table" '|' '"'
 
 *FROM XML TO SQL
 fill "resources/xml/files/"
 fill "resources/xml/schema.csv"
-py main.py -xml
+py main.py "-xml"
 
 
 --------------------------------------------------------------------------------------------
