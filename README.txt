@@ -3,8 +3,6 @@
 *INSTALL REQUIREMENTS
 pip install -r requirements.txt
 
-*PRELIMINARY
-press "Windows Key" -> search "Services" -> search "MySQL80" -> Right-click -> select "Start"
 
 ------------------OLD------------------
 *PRELIMINARY
