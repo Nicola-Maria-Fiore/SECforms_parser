@@ -32,6 +32,7 @@ def genCREATE(columns, row, tname):
 
     return create_statement.format(tname,",\n".join(sql_fields))
 
+
 def genINSERT(records, cols, tname):
     all_records = ""
     insert_statement = "INSERT INTO {} ({}) VALUES ({});\n\n"
@@ -76,8 +77,8 @@ def main(separator):
             print("-{}".format(filename))
             res = CSVtoSQL(os.path.join(source_folder, filename), separator, filename)
             filename = re.sub(r'\..*','.sql',filename)
-            with open(os.path.join(out_folder, filename), 'w', encoding='utf-8') as f:
+            with open(os.path.join(out_folder, filename), 'w', encoding='utf-8-sig') as f:
                 f.write(res) 
 
-            with open(os.path.join(out_folder, "table.sql"), 'a', encoding='utf-8') as f:
+            with open(os.path.join(out_folder, "table.sql"), 'a', encoding='utf-8-sig') as f:
                 f.write(res)       

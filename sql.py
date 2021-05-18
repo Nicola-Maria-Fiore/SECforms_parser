@@ -1,18 +1,48 @@
-import mysql.connector
+import os
+import pandas as pd
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="123456",
-  database="db"
+path_resources="resources/table/encoding/"
+rel_path=os.listdir(path_resources)
+rel_path.remove('.keep')
+
+delimiter="|"
+encloser='"'
+
+statement=""
+for file in rel_path:
+    tname=os.path.splitext(file)[0]
+    abs_path=os.path.abspath(path_resources+file).replace("\\","/")
+
+    #read csv
+    df=pd.read_csv(abs_path, sep=delimiter, quotechar=encloser, warn_bad_lines=True, error_bad_lines=False, engine='python')
+    columns=list(df.columns)
+    cols=[]
+    for column in columns:
+        cols.append( "\t" + column + " VARCHAR(300)")
+    col_statement=",\n".join(cols)
+
+    #CREATE TABLE
+    create_statement=r"""
+CREATE TABLE IF NOT EXISTS {} (
+{}
 )
+CHARACTER SET 'utf8mb4'
+COLLATE 'utf8mb4_unicode_ci';
+    """.format(tname, col_statement)
 
-mycursor = mydb.cursor()
-sql="""
-SHOW TABLES;
-"""
-mycursor.execute(sql)
+    #LOAD DATA
+    load_data_statement=r"""
+LOAD DATA INFILE '{}' REPLACE INTO TABLE {}
+CHARACTER SET 'utf8mb4'
+FIELDS TERMINATED BY '{}' ENCLOSED BY '{}' ESCAPED BY '\\'
+LINES TERMINATED BY '\r\n' STARTING BY ''
+IGNORE 1 LINES;
+    """.format(abs_path, tname, delimiter, encloser)
+    statement=statement+create_statement+load_data_statement
 
-myresult = mycursor.fetchall()
-for x in myresult:
-  print(x)
+
+path_results="results/table/"
+with open(path_results+"table.sql", 'w', encoding='utf-8-sig') as f:
+    f.write(statement)
+    f.close()
+
