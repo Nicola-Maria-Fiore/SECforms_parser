@@ -44,7 +44,8 @@ py main.py '-table' '|' '"'
 
 *FROM XML TO SQL
 fill "resources/xml/files/"
-fill "resources/xml/schema/"
+fill "resources/xml/schema/" (file name as table, list Element Names)
+fill "resources/xml/clean.csv/" (remove "NV" Element Names)
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig"
 py main.py "-clean"
