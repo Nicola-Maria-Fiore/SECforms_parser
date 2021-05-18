@@ -25,29 +25,29 @@ py main.py -b
 fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 py main.py "-txt"
 
-*DOWNLOAD TXT - FINAL REPORT
+*DOWNLOAD TXT - REPORT
 py main.py "-txt -report"
-
-*ENCODING
-fill "resources/html/files/"
-fill "resources/table/files/"
-fill "resources/xml/files/"
-set character set (e.g., "utf-8-sig")
-py main.py "-encoding" "utf-8-sig"
 
 *FROM HTML TO TXT
 fill "resources/html/files/"
+set character set (e.g., "utf-8-sig")
+py main.py "-encoding" "utf-8-sig"
 py main.py "-html"
 
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/files/"
 set delimiter (e.g., ',' or '|' or 'tab')
 set encloser (e.g., '"' or '')
+set character set (e.g., "utf-8-sig")
+py main.py "-encoding" "utf-8-sig"
 py main.py '-table' '|' '"'
 
 *FROM XML TO SQL
 fill "resources/xml/files/"
-fill "resources/xml/schema.csv"
+fill "resources/xml/schema/"
+set character set (e.g., "utf-8-sig")
+py main.py "-encoding" "utf-8-sig"
+py main.py "-clean"
 py main.py "-xml"
 
 

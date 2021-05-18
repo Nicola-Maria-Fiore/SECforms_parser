@@ -4,12 +4,15 @@ encoding="utf-8-sig"
 
 paths=["html","table","xml"]
 
+
 for path in paths:
     path_resources="resources/"+path+"/files/"
     path_results="resources/"+path+"/encoding/"
     dirs=os.listdir(path_resources)
-
+    
+    i=0
     for file in dirs:
+        
         input_file=path_resources+file
         with open(input_file, 'r') as f:
             unicode_text=f.read()
@@ -18,4 +21,6 @@ for path in paths:
 
         with open(out_file, 'wb') as f:
             f.write(encoded_unicode)
-            f.close()
+            f.close()  
+        print("{} - {}".format(str(i), input_file))
+        i=i+1
