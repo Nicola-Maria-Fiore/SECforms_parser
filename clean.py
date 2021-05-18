@@ -5,9 +5,10 @@ path_resources="resources/xml/encoding/"
 path_results="resources/xml/clean/"
 
 dirs=os.listdir(path_resources)
-    
+dirs.remove('.keep')   
 i=0
-for file in dirs:  
+edgar_old="<edgarSubmission>\n"
+for file in dirs:
     input_file=path_resources+file
     with open(input_file, 'r') as f:
         text=f.read()
@@ -18,6 +19,10 @@ for file in dirs:
         old_1="<"+column+">"
         old_2="</"+column+">"
         text=text.replace(old_1, "").replace(old_2, "")
+
+    acc=file.split("_",1)[1].split(".",1)[0]
+    edgar_new=edgar_old+"<accession>"+acc+"</accession>\n"
+    text=text.replace(edgar_old,edgar_new)
 
     out_file=path_results+file
     with open(out_file, 'w') as f:

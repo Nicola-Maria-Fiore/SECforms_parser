@@ -16,6 +16,7 @@ CREATE DATABASE IF NOT EXISTS db;
 USE db;
 """
 
+i=0
 for file in rel_path:
     tname=os.path.splitext(file)[0]
     abs_path=os.path.abspath(path_resources+file).replace("\\","/")
@@ -46,7 +47,8 @@ COLLATE 'utf8mb4_unicode_ci';
     IGNORE 1 LINES;
     """.format(abs_path, tname, delimiter, encloser)
     statement=statement+create_statement+load_statement
-
+    print("{} - {}".format(str(i), file))
+    i=i+1
 
 path_results="results/table/"
 with open(path_results+"table.sql", 'w', encoding='utf-8-sig') as f:

@@ -43,6 +43,7 @@ COLLATE 'utf8mb4_unicode_ci';
 
     statement=statement+create_statement
 
+    i=0
     for file in rel_path_clean:
 
         #LOAD XML
@@ -53,7 +54,9 @@ COLLATE 'utf8mb4_unicode_ci';
     ROWS IDENTIFIED BY '<{}>';
         """.format(abs_path, tname, tname)
         statement=statement+load_statement
-
+        print("{} - {}".format(str(i), file))
+        i=i+1
+        
     path_results="results/xml/"
     with open(path_results+"xml.sql", 'w', encoding='utf-8-sig') as f:
         f.write(statement)
@@ -64,7 +67,7 @@ COLLATE 'utf8mb4_unicode_ci';
 
 
 x=r"""
-TABLE edgarSubmission INTO OUTFILE 'C:/Directory/export_file1.txt'
+TABLE relatedPersonInfo INTO OUTFILE 'C:/Directory/export_file1.txt'
 CHARACTER SET 'utf8mb4'
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n' STARTING BY '';
