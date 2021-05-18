@@ -12,7 +12,7 @@ for file in dirs:
     with open(input_file, 'r') as f:
         text=f.read()
     
-    df=pd.read_csv("resources/xml/schema/clean.csv", warn_bad_lines=True, error_bad_lines=False, engine='python')
+    df=pd.read_csv("resources/xml/clean.csv", warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=df["Element Name"].tolist()
     for column in columns:
         old_1="<"+column+">"
