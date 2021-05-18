@@ -1,7 +1,7 @@
 import os
 
 encoding="utf-8-sig"
-path="html"
+path="xml"
 
 path_resources="resources/"+path+"/files/"
 path_results="resources/"+path+"/encoding/"
