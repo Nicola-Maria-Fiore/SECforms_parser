@@ -37,16 +37,18 @@ COLLATE 'utf8mb4_unicode_ci';
         """.format(tname, col_statement)
 
         #LOAD DATA
+        encloser_load=encloser.replace("None","")
         load_statement=r"""
     LOAD DATA INFILE '{}' REPLACE INTO TABLE {}
     CHARACTER SET 'utf8mb4'
     FIELDS TERMINATED BY '{}' ENCLOSED BY '{}' ESCAPED BY '\\'
     LINES TERMINATED BY '\r\n' STARTING BY ''
     IGNORE 1 LINES;
-        """.format(abs_path, tname, delimiter, encloser)
+        """.format(abs_path, tname, delimiter, encloser_load)
         statement=statement+create_statement+load_statement
         print("{} - {}".format(str(i), file))
         i=i+1
+
 
     path_results="results/table/"
     with open(path_results+"table.sql", 'w', encoding='utf-8-sig') as f:

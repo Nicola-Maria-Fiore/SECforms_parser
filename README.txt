@@ -14,20 +14,31 @@ py main.py "-txt"
 *DOWNLOAD TXT - REPORT
 py main.py "-txt -report"
 
+
+--------------------------------------------------------------------------------------------
 *FROM HTML TO TXT
 fill "resources/html/files/"
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "html"
 py main.py "-html"
 
+
+--------------------------------------------------------------------------------------------
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 fill "resources/table/files/"
-set delimiter (e.g., ',' or '|' or 'tab')
-set encloser (e.g., '"' or '')
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "table"
-py main.py '-table' '|' '"'
+set delimiter (e.g., "|" or "\t")
+set encloser (e.g., '\"' or "None")
 
+*FACTSET
+py main.py "-table" "|" '\"'
+
+*EDGAR
+py main.py "-table" "\t" "None"
+
+
+--------------------------------------------------------------------------------------------
 *FROM XML TO SQL
 fill "resources/xml/files/"
 fill "resources/xml/schema/" (file name as table, list Element Names)
@@ -38,6 +49,7 @@ py main.py "-clean"
 py main.py "-xml"
 
 
+--------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *SEE RESULTS
 see "results/"

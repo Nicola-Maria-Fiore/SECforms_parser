@@ -20,8 +20,6 @@ if __name__ == "__main__":
     elif sys.argv[1]=="-table" and len(sys.argv)>1:
         delimiter=sys.argv[2]
         encloser=sys.argv[3]
-        #if delimiter == "tab":
-        #    delimiter = '\t'
         table.main(delimiter, encloser)
 
     elif sys.argv[1]=="-clean":
