@@ -4,18 +4,6 @@
 pip install -r requirements.txt
 
 
-------------------OLD------------------
-*PRELIMINARY
-fill "resources/varlist.csv"
-
-*CREATE DATABASES
-py main.py -a
-
-*CREATE DO FILES AND VARIABLE NAMES
-py main.py -b
-------------------OLD------------------
-
-
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *FUNCTIONS
