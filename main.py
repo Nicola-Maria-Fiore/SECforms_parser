@@ -1,6 +1,7 @@
 from genDataframes import getFieldsList,createDatasets
 from genFiles import createDoFiles
 from xmlParser import Parse
+from clean import clean
 import Html
 import pandas as pd
 import CSVtoSQL
@@ -36,6 +37,8 @@ if __name__ == "__main__":
         if delimiter == "tab":
             delimiter = '\t'
         CSVtoSQL.main(delimiter)
+    elif sys.argv[1]=="-clean":
+        clean()    
     else:
         print("Incorrect arguments!")
 
