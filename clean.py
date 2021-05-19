@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-def clean():
+def main():
     path_resources="resources/xml/encoding/"
     path_results="resources/xml/clean/"
 
