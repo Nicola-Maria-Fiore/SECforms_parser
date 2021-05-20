@@ -61,7 +61,7 @@ def main():
             except Exception as e:
                 print(str(e))
                 print(str(r.status_code))
-                print("Restart router")
+                print("restart router")
                 break
 
 
