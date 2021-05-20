@@ -7,46 +7,61 @@ pip install -r requirements.txt
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *FUNCTIONS
-*DOWNLOAD TXT
-fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
-py main.py "-txt"
 
-*DOWNLOAD TXT - REPORT
-py main.py "-txt -report"
+--------------------------------------------------------------------------------------------
+*DOWNLOAD TXT
+*PRELIMINARY
+fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
+
+*TXT
+cd "C:/Python/edgar/resources/txt/"
+py txt.py
 
 
 --------------------------------------------------------------------------------------------
 *FROM HTML TO TXT
+*PRELIMINARY
 fill "resources/html/files/"
+
+*ENCODING
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "html"
-py main.py "-html"
+
+*HTML
+cd "C:/Python/edgar/resources/html/"
+py html.py
 
 
 --------------------------------------------------------------------------------------------
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
+*PRELIMINARY
 fill "resources/table/files/"
+set delimiter
+set encloser
+
+*ENCODING
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "table"
-set delimiter (e.g., "|" or "\t")
-set encloser (e.g., '\"' or "None")
 
-*FACTSET
-py main.py "-table" "|" '\"'
-
-*EDGAR
-py main.py "-table" "\t" "None"
+*TABLE
+py table.py
 
 
 --------------------------------------------------------------------------------------------
 *FROM XML TO SQL
+*PRELIMINARY
 fill "resources/xml/files/"
 fill "resources/xml/schema/" (file name as table, list Element Names)
 fill "resources/xml/clean.csv/" (remove "NV" Element Names)
+
+*ENCODING
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "xml"
-py main.py "-clean"
-py main.py "-xml"
+
+*XML
+cd "C:/Python/edgar/resources/xml/"
+py clean.py
+py xml.py
 
 
 --------------------------------------------------------------------------------------------
