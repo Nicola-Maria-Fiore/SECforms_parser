@@ -34,13 +34,11 @@ def requests_retry_session(
 def main():
     df = pd.read_stata(database)
     req = requests_retry_session()
-
     for i in df.index.values:
         file_name = df.loc[i,"fname"]
-
         fpath = "results/txt/" + file_name.replace("edgar/data/","").replace("/","_")
         if os.path.isfile(fpath):
-            print("{} - {} already downloaded".format(str(i),file_name))
+            print("{} - {} - already downloaded".format(str(i),file_name))
         else:
             url = urljoin(base_url, file_name)
             try:
@@ -50,14 +48,13 @@ def main():
                     new_file = "results/txt/" + file_name.replace("edgar/data/","").replace("/","_")
                     with open(new_file, "w") as f:
                         f.write(r.text)
-                    print("{} - {} downloading ".format(str(i), file_name))
+                    print("{} - {} - done".format(str(i), file_name))
                 else:
                     #https://developer.edgar-online.com/docs/errors
                     if r.status_code == 404:
-                        print("{} - {} not found".format(str(i), file_name))
+                        print("{} - {} - not found".format(str(i), file_name))
                     else:
                         raise Exception() 
-
             except Exception as e:
                 print(str(e))
                 print(str(r.status_code))
