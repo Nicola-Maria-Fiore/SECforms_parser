@@ -21,12 +21,10 @@ if __name__ == "__main__":
         delimiter=sys.argv[2]
         encloser=sys.argv[3]
         table.main(delimiter, encloser)
-
     elif sys.argv[1]=="-clean":
         clean.main()
     elif sys.argv[1]=="-xml":
         xml.main()    
     else:
-        print("Incorrect arguments!")
-
-    print("Done!")
+        print("incorrect arguments - error")
+    print("done")
