@@ -20,23 +20,22 @@ if os.path.isdir(dir)==False:
 
 current_dir=current_dir+"encoding"
 
-report=pd.DataFrame(columns=["file_name","not_downloaded"])
-counter=0
+report=pd.DataFrame(columns=["item","not_downloaded"])
 dirs=os.listdir(current_dir)
-for d in range(len(dirs)):
-    file_name=dirs[d]
+for i,item in enumerate(dirs):
     downloaded=False
     not_downloaded=1
-    if file_name.endswith(".html") or file_name.endswith(".htm") or file_name.endswith(".txt"):
-        with open(os.path.join(current_dir, file_name), 'r') as f:
+    if item.endswith(".html") or item.endswith(".htm") or item.endswith(".txt"):
+        with open(os.path.join(current_dir, item), 'r') as f:
             content=f.read()
         res=HTMLtoTEXT(content)
-        with open(os.path.join(dir, file_name), 'w') as f:
+        with open(os.path.join(dir, item), 'w') as f:
             f.write(res)
         downloaded=True
         not_downloaded=0
-    report.loc[counter]=[file_name,not_downloaded]
-    counter+=1
+    report.loc[i]=[item,not_downloaded]
+    print("{} - {}".format(str(i), item))
+print("done")
 report.to_csv(path_results+"report.csv", sep=',', quotechar='"', quoting=csv.QUOTE_ALL, encoding="utf-8-sig")
 print("report.csv - done")  
 print("done")

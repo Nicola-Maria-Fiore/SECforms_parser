@@ -40,7 +40,6 @@ if os.path.isdir(dir)==False:
 
 df=pd.read_stata(current_dir+"txt.dta")
 report=pd.DataFrame(columns=["file_name","not_downloaded"])
-counter=0
 for i in df.index.values:
     file_name=df.loc[i,"fname"]
     file_path=dir+file_name.replace("edgar/data/","").replace("/","_")
@@ -58,7 +57,7 @@ for i in df.index.values:
                 file_path=dir+file_name.replace("edgar/data/","").replace("/","_")
                 with open(file_path, "w") as f:
                     f.write(r.text)
-                print("{} - {} - done".format(str(i), file_name))
+                print("{} - {}".format(str(i), file_name))
                 downloaded=True
                 not_downloaded=0
                 sleep(1/10)
@@ -74,8 +73,7 @@ for i in df.index.values:
             print(r.status_code)
             print(str(e))
             break
-    report.loc[counter]=[file_name,not_downloaded]
-    counter+=1
+    report.loc[i]=[file_name,not_downloaded]
 report.to_csv(path_results+"report.csv", sep=',', quotechar='"', quoting=csv.QUOTE_ALL, encoding="utf-8-sig")
 print("report.csv - done") 
 print("done")         

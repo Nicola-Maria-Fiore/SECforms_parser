@@ -22,16 +22,14 @@ CREATE DATABASE IF NOT EXISTS db;
 USE db;
 """
 
-for ds in range(len(dir_schema)):
-    file_name=dir_schema[ds]
-    tname=os.path.splitext(file_name)[0]
-    abs_path=os.path.abspath(current_dir_schema+file_name).replace("\\","/")
+for j,itemj in enumerate(dir_schema):
+    tname=os.path.splitext(itemj)[0]
+    abs_path=os.path.abspath(current_dir_schema+itemj).replace("\\","/")
     #READ CSV
     df=pd.read_csv(abs_path, sep=delimiter, quotechar=encloser, warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=df["Element Name"].tolist()
     cols=[]
-    for c in range(len(columns)):
-        column=columns[c]
+    for c,column in enumerate(columns):
         cols.append( "\t" + column + " VARCHAR(300)")
     col_statement=",\n".join(cols)
     #CREATE TABLE
@@ -43,19 +41,16 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
     """.format(tname, col_statement)
     statement=statement+create_statement
-    i=0
-    for dc in range(len(dir_clean)):
-        file=dir_clean[dc]
+    for i,item in enumerate(dir_clean):
         #LOAD XML
-        abs_path=os.path.abspath(current_dir_clean+file).replace("\\","/")
+        abs_path=os.path.abspath(current_dir_clean+item).replace("\\","/")
         load_statement=r"""
     LOAD XML INFILE '{}' REPLACE INTO TABLE {}
     CHARACTER SET 'utf8mb4'
     ROWS IDENTIFIED BY '<{}>';
         """.format(abs_path, tname, tname)
         statement=statement+load_statement
-        print("{} - {}".format(str(i), file))
-        i=i+1
+        print("{} - {}".format(str(i), item))
     with open(path_results+"xml.sql", 'w', encoding='utf-8-sig') as f:
         f.write(statement)
         f.close()

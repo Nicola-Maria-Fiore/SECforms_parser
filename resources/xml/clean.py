@@ -9,12 +9,10 @@ if os.path.isdir(path_results)==False:
 
 current_dir_encoding=current_dir+"encoding/"
 dir_encoding=os.listdir(current_dir_encoding) 
-i=0
 edgar_old="<edgarSubmission>\n"
-for d in range(len(dir_encoding)):
-    file=dir_encoding[d]
-    input_file=current_dir_encoding+file
-    with open(input_file, 'r') as f:
+for i,item in enumerate(dir_encoding):
+    file_path=current_dir_encoding+item
+    with open(file_path, 'r') as f:
         text=f.read()
     df=pd.read_csv(current_dir+"clean.csv", warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=df["Element Name"].tolist()
@@ -23,13 +21,12 @@ for d in range(len(dir_encoding)):
         old_1="<"+column+">"
         old_2="</"+column+">"
         text=text.replace(old_1, "").replace(old_2, "")
-    acc=file.split("_",1)[1].split(".",1)[0]
+    acc=item.split("_",1)[1].split(".",1)[0]
     edgar_new=edgar_old+"<accession>"+acc+"</accession>\n"
     text=text.replace(edgar_old,edgar_new)
-    out_file=path_results+file
-    with open(out_file, 'w') as f:
+    file_path=path_results+item
+    with open(file_path, 'w') as f:
         f.write(text)
         f.close()  
-    print("{} - {}".format(str(i), input_file))
-    i=i+1
+    print("{} - {}".format(str(i), item))
 print("done")
