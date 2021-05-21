@@ -11,13 +11,15 @@ current_dir_encoding=current_dir+"encoding/"
 dir_encoding=os.listdir(current_dir_encoding) 
 i=0
 edgar_old="<edgarSubmission>\n"
-for file in dir_encoding:
+for d in range(len(dir_encoding)):
+    file=dir_encoding[d]
     input_file=current_dir_encoding+file
     with open(input_file, 'r') as f:
         text=f.read()
     df=pd.read_csv(current_dir+"clean.csv", warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=df["Element Name"].tolist()
-    for column in columns:
+    for c in range(len(columns)):
+        column=columns[c]
         old_1="<"+column+">"
         old_2="</"+column+">"
         text=text.replace(old_1, "").replace(old_2, "")

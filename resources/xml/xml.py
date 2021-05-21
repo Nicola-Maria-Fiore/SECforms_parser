@@ -22,14 +22,16 @@ CREATE DATABASE IF NOT EXISTS db;
 USE db;
 """
 
-for f in dir_schema:
-    tname=os.path.splitext(f)[0]
-    abs_path=os.path.abspath(current_dir_schema+f).replace("\\","/")
+for ds in range(len(dir_schema)):
+    file_name=dir_schema[ds]
+    tname=os.path.splitext(file_name)[0]
+    abs_path=os.path.abspath(current_dir_schema+file_name).replace("\\","/")
     #READ CSV
     df=pd.read_csv(abs_path, sep=delimiter, quotechar=encloser, warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=df["Element Name"].tolist()
     cols=[]
-    for column in columns:
+    for c in range(len(columns)):
+        column=columns[c]
         cols.append( "\t" + column + " VARCHAR(300)")
     col_statement=",\n".join(cols)
     #CREATE TABLE
@@ -42,7 +44,8 @@ COLLATE 'utf8mb4_unicode_ci';
     """.format(tname, col_statement)
     statement=statement+create_statement
     i=0
-    for file in dir_clean:
+    for dc in range(len(dir_clean)):
+        file=dir_clean[dc]
         #LOAD XML
         abs_path=os.path.abspath(current_dir_clean+file).replace("\\","/")
         load_statement=r"""

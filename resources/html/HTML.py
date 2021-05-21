@@ -22,7 +22,9 @@ current_dir=current_dir+"encoding"
 
 report=pd.DataFrame(columns=["file_name","not_downloaded"])
 counter=0
-for file_name in os.listdir(current_dir):
+dirs=os.listdir(current_dir)
+for d in range(len(dirs)):
+    file_name=dirs[d]
     downloaded=False
     not_downloaded=1
     if file_name.endswith(".html") or file_name.endswith(".htm") or file_name.endswith(".txt"):

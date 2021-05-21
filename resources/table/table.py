@@ -27,14 +27,16 @@ USE db;
 """
 
 i=0
-for file in dir_encoding:
+for d in range(len(dir_encoding)):
+    file=dir_encoding[d]
     tname=os.path.splitext(file)[0]
     abs_path=os.path.abspath(current_dir_encoding+file).replace("\\","/")
     #READ CSV
     df=pd.read_csv(abs_path, sep=delimiter, quotechar=encloser, warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=list(df.columns)
     cols=[]
-    for column in columns:
+    for c in range(len(columns)):
+        column=columns[c]
         cols.append( "\t" + column + " VARCHAR(300)")
     col_statement=",\n".join(cols)
     #CREATE TABLE
