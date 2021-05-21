@@ -75,5 +75,6 @@ for i in df.index.values:
             break
     report.loc[i]=[file_name,not_downloaded]
 report.to_csv(path_results+"report.csv", sep=',', quotechar='"', quoting=csv.QUOTE_ALL, encoding="utf-8-sig")
+report.index.name="index"
 print("report.csv - done") 
 print("done")         
