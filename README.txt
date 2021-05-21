@@ -14,7 +14,7 @@ pip install -r requirements.txt
 fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
 
 *TXT
-cd "C:/Python/edgar/resources/txt/"
+cd "resources/txt/"
 py txt.py
 
 
@@ -28,7 +28,7 @@ set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "html"
 
 *HTML
-cd "C:/Python/edgar/resources/html/"
+cd "edgar/resources/html/"
 py html.py
 
 
@@ -36,14 +36,14 @@ py html.py
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
 *PRELIMINARY
 fill "resources/table/files/"
-set delimiter
-set encloser
+set delimiter and encloser in ""resources/table/table.py"
 
 *ENCODING
 set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "table"
 
 *TABLE
+cd "resources/table/"
 py table.py
 
 
@@ -59,7 +59,7 @@ set character set (e.g., "utf-8-sig")
 py main.py "-encoding" "utf-8-sig" "xml"
 
 *XML
-cd "C:/Python/edgar/resources/xml/"
+cd "resources/xml/"
 py clean.py
 py xml.py
 
