@@ -6,60 +6,34 @@ pip install -r requirements.txt
 
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
-*FUNCTIONS
+*PRELIMINARY
+*ENCODING
+set path in "C:/Python/edgar/"
+py encoding.py 
 
 --------------------------------------------------------------------------------------------
+*FUNCTIONS
 *DOWNLOAD TXT
-*PRELIMINARY
 fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
-
-*TXT
-cd "resources/txt/"
+cd "C:/Python/edgar/resources/txt/"
 py txt.py
 
-
---------------------------------------------------------------------------------------------
 *FROM HTML TO TXT
-*PRELIMINARY
 fill "resources/html/files/"
-
-*ENCODING
-set character set (e.g., "utf-8-sig")
-py main.py "-encoding" "utf-8-sig" "html"
-
-*HTML
 cd "edgar/resources/html/"
 py html.py
 
-
---------------------------------------------------------------------------------------------
 *FROM (DELIMITER-SEPARATED) TABLE TO SQL
-*PRELIMINARY
 fill "resources/table/files/"
-set delimiter and encloser in ""resources/table/table.py"
-
-*ENCODING
-set character set (e.g., "utf-8-sig")
-py main.py "-encoding" "utf-8-sig" "table"
-
-*TABLE
-cd "resources/table/"
+set delimiter and encloser in "C:/Python/edgar/resources/table/table.py"
+cd "C:/Python/edgar/resources/table/"
 py table.py
 
-
---------------------------------------------------------------------------------------------
 *FROM XML TO SQL
-*PRELIMINARY
-fill "resources/xml/files/"
-fill "resources/xml/schema/" (file name as table, list Element Names)
-fill "resources/xml/clean.csv/" (remove "NV" Element Names)
-
-*ENCODING
-set character set (e.g., "utf-8-sig")
-py main.py "-encoding" "utf-8-sig" "xml"
-
-*XML
-cd "resources/xml/"
+fill "C:/Python/edgar/resources/xml/files/"
+fill "C:/Python/edgar/resources/xml/schema/" (file name as table, list Element Names)
+fill "C:/Python/edgar/resources/xml/clean.csv/" (remove "NV" Element Names)
+cd "C:/Python/edgar/resources/xml/"
 py clean.py
 py xml.py
 

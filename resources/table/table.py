@@ -26,9 +26,9 @@ CREATE DATABASE IF NOT EXISTS db;
 USE db;
 """
 
-for i,item in enumerate(dir_encoding):
-    tname=os.path.splitext(item)[0]
-    abs_path=os.path.abspath(current_dir_encoding+item).replace("\\","/")
+for i,value in enumerate(dir_encoding):
+    tname=os.path.splitext(value)[0]
+    abs_path=os.path.abspath(current_dir_encoding+value).replace("\\","/")
     #READ CSV
     df=pd.read_csv(abs_path, sep=delimiter, quotechar=encloser, warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=list(df.columns)
@@ -55,7 +55,7 @@ COLLATE 'utf8mb4_unicode_ci';
     IGNORE 1 LINES;
     """.format(abs_path, tname, delimiter, encloser_load)
     statement=statement+create_statement+load_statement
-    print("{} - {}".format(str(i), item))
+    print("{} - {}".format(str(i), value))
 with open(path_results+"table.sql", 'w', encoding='utf-8-sig') as f:
     f.write(statement)
     f.close()

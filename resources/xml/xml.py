@@ -22,9 +22,9 @@ CREATE DATABASE IF NOT EXISTS db;
 USE db;
 """
 
-for j,itemj in enumerate(dir_schema):
-    tname=os.path.splitext(itemj)[0]
-    abs_path=os.path.abspath(current_dir_schema+itemj).replace("\\","/")
+for j,valuej in enumerate(dir_schema):
+    tname=os.path.splitext(valuej)[0]
+    abs_path=os.path.abspath(current_dir_schema+valuej).replace("\\","/")
     #READ CSV
     df=pd.read_csv(abs_path, sep=delimiter, quotechar=encloser, warn_bad_lines=True, error_bad_lines=False, engine='python')
     columns=df["Element Name"].tolist()
@@ -41,16 +41,16 @@ CHARACTER SET 'utf8mb4'
 COLLATE 'utf8mb4_unicode_ci';
     """.format(tname, col_statement)
     statement=statement+create_statement
-    for i,item in enumerate(dir_clean):
+    for i,value in enumerate(dir_clean):
         #LOAD XML
-        abs_path=os.path.abspath(current_dir_clean+item).replace("\\","/")
+        abs_path=os.path.abspath(current_dir_clean+value).replace("\\","/")
         load_statement=r"""
     LOAD XML INFILE '{}' REPLACE INTO TABLE {}
     CHARACTER SET 'utf8mb4'
     ROWS IDENTIFIED BY '<{}>';
         """.format(abs_path, tname, tname)
         statement=statement+load_statement
-        print("{} - {}".format(str(i), item))
+        print("{} - {}".format(str(i), value))
     with open(path_results+"xml.sql", 'w', encoding='utf-8-sig') as f:
         f.write(statement)
         f.close()
