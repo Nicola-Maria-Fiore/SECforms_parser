@@ -1,11 +1,12 @@
 import os
 import pandas as pd
 
+#DIRECTORY
 current_dir=os.path.dirname(os.path.abspath(__file__)).replace("\\","/")+"/"
 os.chdir(current_dir)
 path_results=current_dir.replace("resources", "results")
-if os.path.isdir(path_results)==False:
-    os.mkdir(path_results)  
+shutil.rmtree(path_results)
+os.mkdir(path_results)
 
 current_dir_encoding=current_dir+"encoding/"
 dir_encoding=os.listdir(current_dir_encoding)
