@@ -9,14 +9,14 @@ def HTMLtoTEXT(html_doc):
     content = [c for c in content if len(c)<=30]
     return " ".join(content)
 
+#DIRECTORY
 current_dir=os.path.dirname(os.path.abspath(__file__)).replace("\\","/")+"/"
 os.chdir(current_dir)
 path_results=current_dir.replace("resources", "results")
-if os.path.isdir(path_results)==False:
-    os.mkdir(path_results)
+shutil.rmtree(path_results)
+os.mkdir(path_results)
 dir=path_results+"html/"
-if os.path.isdir(dir)==False:
-    os.mkdir(dir)
+os.mkdir(dir)
 
 current_dir=current_dir+"encoding"
 
