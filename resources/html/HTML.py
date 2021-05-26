@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import os
+import shutil
 import pandas as pd
 import csv
 
