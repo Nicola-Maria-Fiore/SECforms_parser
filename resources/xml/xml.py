@@ -52,7 +52,7 @@ COLLATE 'utf8mb4_unicode_ci';
     ROWS IDENTIFIED BY '<{}>';
         """.format(abs_path, tname, tname)
         statement=statement+load_statement
-        print("{} - {}".format(str(i), value))
+        print(f"{i} - {value}")
     with open(path_results+"xml.sql", 'w', encoding='utf-8-sig') as f:
         f.write(statement)
         f.close()

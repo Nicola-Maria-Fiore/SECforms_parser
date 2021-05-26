@@ -35,7 +35,7 @@ for i,value in enumerate(dirs):
         downloaded=True
         not_downloaded=0
     report.loc[i]=[value,not_downloaded]
-    print("{} - {}".format(str(i), value))
+    print(f"{i} - {value}")
 report.to_csv(path_results+"report.csv", sep=',', quotechar='"', quoting=csv.QUOTE_ALL, encoding="utf-8-sig")
 report.index.name="index"
 print("report.csv - done")  

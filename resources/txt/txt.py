@@ -42,11 +42,12 @@ df=pd.read_stata(current_dir+"txt.dta")
 report=pd.DataFrame(columns=["file_name","not_downloaded"])
 for i in df.index.values:
     file_name=df.loc[i,"fname"]
+    value=file_name
     file_path=dir+file_name.replace("edgar/data/","").replace("/","_")
     if os.path.isfile(file_path):
         downloaded=True
         not_downloaded=0
-        print("{} - {} - already downloaded".format(str(i),file_name))
+        print(f"{i} - {value} - already downloaded")
     else:
         downloaded=False
         not_downloaded=1
@@ -57,22 +58,24 @@ for i in df.index.values:
                 file_path=dir+file_name.replace("edgar/data/","").replace("/","_")
                 with open(file_path, "w") as f:
                     f.write(r.text)
-                print("{} - {}".format(str(i), file_name))
+                print(f"{i} - {value}")
                 downloaded=True
                 not_downloaded=0
                 sleep(1/10)
             elif r.status_code == 404:
                 #https://developer.edgar-online.com/docs/errors
-                print("{} - {} - not found".format(str(i), file_name)) 
-                print(r.status_code)                 
+                print(f"{i} - {value} - not found") 
+                print(r.status_code)  
+                pass               
             else:
-                print("{} - {} - error".format(str(i), file_name)) 
+                print(f"{i} - {value} - error")
                 print(r.status_code)
+                pass
         except Exception as e:
-            print("{} - {} - error".format(str(i), file_name)) 
+            print(f"{i} - {value} - error")
             print(r.status_code)
-            print(str(e))
-            break
+            print(e)
+            pass
     report.loc[i]=[file_name,not_downloaded]
 report.to_csv(path_results+"report.csv", sep=',', quotechar='"', quoting=csv.QUOTE_ALL, encoding="utf-8-sig")
 report.index.name="index"

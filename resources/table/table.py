@@ -57,7 +57,7 @@ COLLATE 'utf8mb4_unicode_ci';
     IGNORE 1 LINES;
     """.format(abs_path, tname, delimiter, encloser_load)
     statement=statement+create_statement+load_statement
-    print("{} - {}".format(str(i), value))
+    print(f"{i} - {value}")
 with open(path_results+"table.sql", 'w', encoding='utf-8-sig') as f:
     f.write(statement)
     f.close()

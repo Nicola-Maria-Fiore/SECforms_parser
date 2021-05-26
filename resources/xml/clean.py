@@ -30,5 +30,5 @@ for i,value in enumerate(dir_encoding):
     with open(file_path, 'w') as f:
         f.write(text)
         f.close()  
-    print("{} - {}".format(str(i), value))
+    print(f"{i} - {value}")
 print("done")

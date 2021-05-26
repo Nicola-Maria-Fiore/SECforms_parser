@@ -21,7 +21,7 @@ for i,value in enumerate(dirs):
     with open(file_path, 'wb') as f:
         f.write(encoded_unicode)
         f.close()  
-    print("{} - {}".format(str(i), value))
+    print(f"{i} - {value}")
 print("done")
         
 
