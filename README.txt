@@ -1,51 +1,3 @@
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-*INSTALL REQUIREMENTS
-pip install -r requirements.txt
-
-
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-*PRELIMINARY
-*ENCODING
-set path in "C:/Python/edgar/"
-py encoding.py 
-
---------------------------------------------------------------------------------------------
-*FUNCTIONS
-*DOWNLOAD TXT
-fill "resources/txt/txt.dta", column "fname" (from "WRDS SEC Analytics Suite - SEC Filings on WRDS" https://wrds-web.wharton.upenn.edu/wrds//ds/sec/wforms/filings.cfm)
-cd "C:/Python/edgar/resources/txt/"
-py txt.py
-
-*FROM HTML TO TXT
-fill "resources/html/files/"
-cd "edgar/resources/html/"
-py html.py
-
-*FROM (DELIMITER-SEPARATED) TABLE TO SQL
-fill "resources/table/files/"
-set delimiter and encloser in "C:/Python/edgar/resources/table/table.py"
-cd "C:/Python/edgar/resources/table/"
-py table.py
-
-*FROM XML TO SQL
-fill "C:/Python/edgar/resources/xml/files/"
-fill "C:/Python/edgar/resources/xml/schema/" (file name as table, list Element Names)
-fill "C:/Python/edgar/resources/xml/clean.csv/" (remove "NV" Element Names)
-cd "C:/Python/edgar/resources/xml/"
-py clean.py
-py xml.py
-
-
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-*SEE RESULTS
-see "results/"
-
-
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
 *STUDY MATERIALS
 *DATA.GOV
 https://www.data.gov/
@@ -105,7 +57,6 @@ http://finra-markets.morningstar.com/MarketData/
 https://tools.finra.org/fund_analyzer/
 
 
---------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 *TECHNICAL MATERIALS
 https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
