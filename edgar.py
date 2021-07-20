@@ -91,7 +91,7 @@ def clean():
     #DOWNLOAD - SWITCH
     shutil.rmtree(path_results, ignore_errors=True)
     os.mkdir(path_results)
-    #ENCODING FOLDER - SET
+    #ENCODING FOLDER
     encoding_dir=path_resources+"encoding/"
     dirs=os.listdir(encoding_dir)
     #CLEAN
@@ -162,7 +162,8 @@ def table():
     directory(function_name)
     #DOWNLOAD - SWITCH
     re_download(path_results, dir)
-    #ENCODING FOLDER - SET
+    #ENCODING FOLDER
+    encoding(function_name)
     encoding_dir=path_resources+"encoding/"
     dirs=os.listdir(encoding_dir)
     #FACTSET - CHANGE
@@ -331,7 +332,7 @@ def xml():
 
 ############################################################################
 #EDGAR TOOLS
-HTML()
+#HTML()
 table()
-txt()
-xml()
+#txt()
+#xml()
