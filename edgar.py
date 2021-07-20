@@ -10,6 +10,7 @@ from urllib3.util.retry import Retry
 from urllib.parse import urljoin
 import requests
 import time
+import os, sys, codecs
 
 #TO_CSV
 to_csv=dict(sep=',', na_rep='.', float_format=None, columns=None, header=True, index=True, index_label=None, mode='w', encoding="utf-8-sig", compression='infer', quoting=csv.QUOTE_ALL, quotechar='"', line_terminator='\r\n', chunksize=10000, date_format=None, doublequote=True, escapechar='\\', decimal='.', errors='strict', storage_options=None)
@@ -77,6 +78,7 @@ def encoding(path):
         file_path=path_resources+value
         with open(file_path, 'r') as f:
             unicode_text=f.read()
+            
             encoded_unicode = unicode_text.encode(charset)
         file_path=path_results+value
         with open(file_path, 'wb') as f:
@@ -166,6 +168,8 @@ def table():
     encoding(function_name)
     encoding_dir=path_resources+"encoding/"
     dirs=os.listdir(encoding_dir)
+    #LINES TERMINATED BY - CHANGE
+    lines_terminated_by=r"\n"
     #FACTSET - CHANGE
     delimiter=r"|"
     encloser=r'"'
@@ -191,22 +195,22 @@ def table():
             cols.append( "\t" + column + " VARCHAR(300)")
         col_statement=",\n".join(cols)
         #CREATE TABLE
-        create_statement=r"""
-    CREATE TABLE IF NOT EXISTS {} (
-    {}
+        create_statement=rf"""
+    CREATE TABLE IF NOT EXISTS {tname} (
+    {col_statement}
     )
     CHARACTER SET 'utf8mb4'
     COLLATE 'utf8mb4_unicode_ci';
-        """.format(tname, col_statement)
+        """
         #LOAD DATA
-        encloser_load=encloser.replace("None","")
-        load_statement=r"""
-        LOAD DATA INFILE '{}' REPLACE INTO TABLE {}
+        enclosed_by=encloser.replace("None","")
+        load_statement=rf"""
+        LOAD DATA INFILE '{abs_path}' REPLACE INTO TABLE {tname}
         CHARACTER SET 'utf8mb4'
-        FIELDS TERMINATED BY '{}' ENCLOSED BY '{}' ESCAPED BY '\\'
-        LINES TERMINATED BY '\r\n' STARTING BY ''
+        FIELDS TERMINATED BY '{delimiter}' ENCLOSED BY '{enclosed_by}' ESCAPED BY '\\'
+        LINES TERMINATED BY '{lines_terminated_by}' STARTING BY ''
         IGNORE 1 LINES;
-        """.format(abs_path, tname, delimiter, encloser_load)
+        """
         statement=statement+create_statement+load_statement
         print(f"{i} - {value}")
     with open(path_results+"table.sql", 'w', encoding='utf-8-sig') as f:
